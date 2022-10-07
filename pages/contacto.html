@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/icono.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Yantar Contacto</title>
+</head>
+
+<body>
+    <header>
+        <!--HEADER SUPERIOR-->
+        <div class="header__superior">
+            <img src="../img/Logotipo.png" alt="Logo">
+            <input type="search" placeholder="¿Que estas Buscando?">
+        </div>
+        <!--BARRA DE NAVEGACION-->
+        <div class="container__menu">
+            <div class="menu__logo--movil">
+                <img src="../img/Logotipo.png" alt="Logo">
+            </div>
+            <!--MENU PRINCIPAL-->
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="../index.html"></a></li>
+                        <li><a href="./nosotros.html">Nosotros</a></li>
+                        <li><a href="./productos.html">Productos</a>
+                            <!--SUBMENU-->
+                            <ul>
+                                <li><a href="./productos.html#menu__basico">Menu Basico</a></li>
+                                <li><a href="./productos.html#menu__premium">Menu Premium</a></li>
+                                <li><a href="./productos.html#menu__pizzaParty">Pizza Party</a></li>
+                                <li><a href="./productos.html#menu__viandas">Viandas</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./clientes.html">Clientes</a></li>
+                        <li><a href="./contacto.html" id="selected">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="contacto__title">
+            <h2>Contactenos</h2>
+        </div>
+        <section>
+            <div class="contacto">
+                <div class="contacto__form">
+                    <form>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="nombre">
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" name="apellido">
+                        <label for="correo">Email</label>
+                        <input type="email" name="correo">
+                        <label for="telefono">Telefono</label>
+                        <input type="number" name="telefono">
+                        <label for="tipoDeEvento">Tipo de Evento</label>
+                        <select name="tipoDeEvento">
+                            <option value="cocktail">Cocktail</option>
+                            <option value="lunch">Lunch</option>
+                            <option value="casamiento">Casamiento</option>
+                            <option value="cumpleanios">Cumpleaños</option>
+                            <option value="aniversario">Aniversario</option>
+                        </select>
+                        <div>
+                            <label for="lugarDelEvento">Lugar del Evento</label>
+                            <div>Salon de Fiesta</div>
+                            <input type="radio" name="lugarDelEvento" value="salonDeFiesta">
+                            <div>Quinta</div>
+                            <input type="radio" name="lugarDelEvento" value="quinta">
+                            <div>Casa Particular</div>
+                            <input type="radio" name="lugarDelEvento" value="casaParticular">
+                        </div>
+                        <label for="invitados">Numero de Invitados</label>
+                        <input type="number" name="invitados">
+                        <label for="fechaDelEvento">Fecha Del Evento</label>
+                        <input type="date" name="fechaDelEvento" min="2022-09-01" max="2023-08-31">
+                        <div>
+                            <label for="inicioDelEvento">Inicio del Evento</label>
+                            <div>Mañana</div>
+                            <input type="radio" name="inicioDelEvento" value="mañana">
+                            <div>Tarde</div>
+                            <input type="radio" name="inicioDelEvento" value="tarde">
+                            <div>Noche</div>
+                            <input type="radio" name="inicioDelEvento" value="noche">
+                        </div>
+                        <label for="mensaje">Mensaje</label>
+                        <textarea name="mensaje" id="" cols="30" rows="10"></textarea>
+                        <input type="submit" value="Enviar">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <!-- LOGO FOOTER -->
+        <div class="footer">
+            <div class="footer__conteiner">
+                <div class="footer__logo">
+                    <img src="../img/Logotipo.png" alt="Logo" width="100px" height="100px">
+                </div>
+                <!-- CONTACTO FOOTER -->
+                <div class="footer__contacto">
+                    <h3 class="footer__contacto__num">0800-292-6827</h3>
+                    <h3>yantar.catering2000@gmail.com</h3>
+                </div>
+                <!-- REDES FOOTER -->
+                <div class="footer__redes">
+                    <a id="instagram" href="https://www.instagram.com/yantar.catering/" target="_blank"><img
+                            src="../img/instagram.png" alt="icono-instagram" width="40px"></a>
+                    <a href="https://www.facebook.com/" target="_blank"><img src="../img/facebook.png"
+                            alt="icono-instagram" width="47px"></a>
+                    <a href="https://twitter.com/?lang=es" target="_blank"><img src="../img/twitter.png"
+                            alt="icono-instagram" width="47px"></a>
+                </div>
+            </div>
+            <!-- COPY GIT ML -->
+            <div class="footer__gitml">
+                <p>&copy;<a href="https://github.com/Martin-L86" target="_blank">Pagina creada por Martin Lamacchia</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

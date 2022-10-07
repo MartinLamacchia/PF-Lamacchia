@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/icono.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Yantar Productos</title>
+</head>
+
+<body>
+    <header>
+        <!--HEADER SUPERIOR-->
+        <div class="header__superior">
+            <img src="../img/Logotipo.png" alt="Logo">
+            <input type="search" placeholder="¿Que estas Buscando?">
+        </div>
+        <!--BARRA DE NAVEGACION-->
+        <div class="container__menu">
+            <div class="menu__logo--movil">
+                <img src="../img/Logotipo.png" alt="Logo">
+            </div>
+            <!--MENU PRINCIPAL-->
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="../index.html"></a></li>
+                        <li><a href="./nosotros.html">Nosotros</a></li>
+                        <li><a href="./productos.html" id="selected">Productos</a>
+                            <!--SUBMENU-->
+                            <ul>
+                                <li><a href="./productos.html#menu__basico">Menu Basico</a></li>
+                                <li><a href="./productos.html#menu__premium">Menu Premium</a></li>
+                                <li><a href="./productos.html#menu__pizzaParty">Pizza Party</a></li>
+                                <li><a href="./productos.html#menu__viandas">Viandas</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./clientes.html">Clientes</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1 id="menu__menu">Productos</h1>
+        <section class="menu__menu">
+            <a href="#menu__basico">Menu Basico</a>
+            <a href="#menu__premium">Menu Premium</a>
+            <a href="#menu__pizzaParty">Pizza Party</a>
+            <a href="#menu__viandas">Viandas</a>
+        </section>
+        <section class="productos__conteiner">
+            <div class="productos productos__basico">
+                <div class="productos__menu--lista">
+                    <h2 id="menu__basico">Menu Basico</h2>
+                    <h3>Recepcion</h3>
+                    <ul>
+                        <li>Tabla de Quesos y embutidos</li>
+                        <li>Ensaladas (No Waldorf ni Camaron)</li>
+                        <li>Fosforitos</li>
+                        <li>Sandwich de miga triples</li>
+                        <li>Sanwich de matambre</li>
+                        <li>Copas variadas</li>
+                    </ul>
+                    <h3>Plato principal</h3>
+                    <ul>
+                        <li>Creps de pollo y Puerro</li>
+                        <li>Pollo al champiñon con pure de papa</li>
+                        <li>Carne a la mostaza</li>
+                    </ul>
+                    <h3>Menu infantil</h3>
+                    <ul>
+                        <li>Milanesa con papas fritas</li>
+                    </ul>
+                    <h3>Mesa dulce</h3>
+                    <h3>Final de Fiesta</h3>
+                    <ul>
+                        <li>Pizza</li>
+                    </ul>
+                </div>
+                <img src="../img/menu_basico.jpg" alt="menu basico" class="productos__picture">
+            </div>
+
+            <div class="productos productos__premium">
+                <img src="../img/menu_premium.jpg" alt="menu premium" class="productos__picture">
+
+                <div class="productos__menu--lista">
+                    <h2 id="menu__premium">Menu Premium</h2>
+                    <h3>Recepcion</h3>
+                    <ul>
+                        <li>Tabla de Quesos y embutidos</li>
+                        <li>Ensaladas</li>
+                        <li>Fosforitos</li>
+                        <li>Sandwich de miga triples</li>
+                        <li>Sanwich de matambre</li>
+                        <li>Fingers fríos y calientes</li>
+                        <li>Estaciones tematicas</li>
+                        <li>Copas Variadas</li>
+                    </ul>
+                    <h3>Plato principal</h3>
+                    <ul>
+                        <li>Creps de pollo y Puerro</li>
+                        <li>Pollo al champiñon con pure de papa</li>
+                        <li>Pollo al verdeo con papas Españolas</li>
+                        <li>Carne a la mostaza</li>
+                        <li>lomo al Strogonof</li>
+                    </ul>
+                    <h3>Menu infantil</h3>
+                    <ul>
+                        <li>Milanesa con Papas fritas</li>
+                        <li>Hamburguesas con papas fritas</li>
+                    </ul>
+                    <h3>Mesa dulce</h3>
+                    <ul>
+                        <li>Incluye fondeu de chocolate</li>
+                    </ul>
+                    <h3>Final de Fiesta</h3>
+                    <ul>
+                        <li>Pizza</li>
+                        <li>Sandwich de Pernil</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="productos productos__pizzaParty">
+                <div class="productos--lista">
+                    <h2 id="menu__pizzaParty">Pizza Party</h2>
+                    <ul>
+                        <li>Muzzarella</li>
+                        <li>Fugazzeta</li>
+                        <li>Napolitana</li>
+                        <li>Verdura y salsa blanca</li>
+                        <li>Jamon y morrones</li>
+                        <li>Anchoas</li>
+                        <li>Calabresa</li>
+                        <li>Cuatro quesos</li>
+                        <li>Rucula y jamon crudo</li>
+                        <li>Provolone</li>
+                    </ul>
+                </div>
+                <img src="../img/pizza_party.jpg" alt="pizza party" class="productos__picture">
+            </div>
+
+            <div class="productos productos__viandas">
+                <img src="../img/viandas.jpg" alt="viandas" class="productos__picture">
+                <div class="productos--lista">
+                    <h2 id="menu__viandas">Viandas</h2>
+                    <ul>
+                        <li>Malfatti de espinaca</li>
+                        <li>Creps de pollo y Puerro</li>
+                        <li>Pollo al verdeo con papas a la Española</li>
+                        <li>Tarta de peras y queso azul</li>
+                        <li>Risotto de remolacha</li>
+                        <li>Mil hojas de vegetales</li>
+                        <li>Souffle de calabaza y coliflor</li>
+                        <li>Spaguetti con vegetales</li>
+                        <li>Pescado al limon</li>
+                        <li>Sopas varias</li>
+                        <li>Entre otras</li>
+                        
+                    </ul>
+                    <h3>Pregunta por nuestro postres</h3>
+                </div>
+            </div>
+        </section>
+        <div class="productos__volver">
+            <a href="#menu__menu"><input type="button" value="Volver arriba"></a>
+        </div>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <!-- LOGO FOOTER -->
+        <div class="footer">
+            <div class="footer__conteiner">
+                <div class="footer__logo">
+                    <img src="../img/Logotipo.png" alt="Logo" width="100px" height="100px">
+                </div>
+                <!-- CONTACTO FOOTER -->
+                <div class="footer__contacto">
+                    <h3 class="footer__contacto__num">0800-292-6827</h3>
+                    <h3>yantar.catering2000@gmail.com</h3>
+                </div>
+                <!-- REDES FOOTER -->
+                <div class="footer__redes">
+                    <a id="instagram" href="https://www.instagram.com/yantar.catering/" target="_blank"><img
+                            src="../img/instagram.png" alt="icono-instagram" width="40px"></a>
+                    <a href="https://www.facebook.com/" target="_blank"><img src="../img/facebook.png"
+                            alt="icono-instagram" width="47px"></a>
+                    <a href="https://twitter.com/?lang=es" target="_blank"><img src="../img/twitter.png"
+                            alt="icono-instagram" width="47px"></a>
+                </div>
+            </div>
+            <!-- COPY GIT ML -->
+            <div class="footer__gitml">
+                <p>&copy;<a href="https://github.com/Martin-L86" target="_blank">Pagina creada por Martin Lamacchia</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
