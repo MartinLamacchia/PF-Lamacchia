@@ -447,6 +447,10 @@ main{
     justify-content: space-around;
 }
 
+.productos__img950{
+    display: none;
+}
+
 .productos__basico{
     width: 80%;
     grid-area: basico;
@@ -504,7 +508,7 @@ main{
 }
 
 .productos__viandas{
-    width: 80%;
+    width: 100%;
     grid-area: viandas;
     display: flex;
     flex-direction: row;
@@ -513,12 +517,17 @@ main{
 }
 
 .productos__viandas img{
-    width: 60%;
+    width: 50%;
     height: 80%;
     border-radius: 0.7rem;
     box-shadow: 7px 6px 12px 2px rgba(0,0,0,0.55);
     -webkit-box-shadow: 7px 6px 12px 2px rgba(0,0,0,0.55);
     -moz-box-shadow: 7px 6px 12px 2px rgba(0,0,0,0.55);
+    margin-left: 5%;
+}
+
+.productos__viandas div{
+    margin-right: 5%;
 }
 
 .productos__viandas div ul li{
@@ -1026,8 +1035,110 @@ footer {
         padding: 5px;
         top: 2rem;
         left: 10%;
-
     }
+
+    .productos__conteiner{
+        grid-auto-rows: none;
+        grid-template-rows: 48rem 48rem 37rem 37rem;
+        gap: 5rem;
+    }
+
+    .productos__basico > img{
+        display: none;
+    }
+
+    .productos__premium > img{
+        display: none;
+    }
+
+    .productos__pizzaParty > img{
+        display: none;
+    }
+
+    .productos__viandas > img{
+        display: none;
+    }
+
+    .productos__img950{
+        display: flex;
+        justify-content: center;
+    }
+
+    .productos__img950 img{
+        width: 100%;
+    }
+
+    .productos__basico{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .productos__premium{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .productos__pizzaParty{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .productos__viandas{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .productos__menu--lista{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .productos__menu--lista h2{
+        margin-bottom: 10px;
+    }
+
+    .productos__menu--lista h3{
+        margin-bottom: 8px;
+    }
+
+    .productos__menu--lista ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .productos__menu--lista ul li{
+        font-size: 0.8rem;
+        margin: 0px 12px;
+    
+    }
+
+
+    .productos--lista h2{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .productos--lista h3{
+        text-align: center;
+    }
+
+    .productos--lista ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .productos--lista ul li{
+        font-size: 0.8rem;
+        margin: 0px 12px;
+    }
+    
 
     .clientes__marca{
         width: 16rem;
