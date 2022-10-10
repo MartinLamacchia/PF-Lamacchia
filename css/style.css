@@ -1037,10 +1037,16 @@ footer {
         left: 10%;
     }
 
+    .menu__menu{
+        height:4rem;
+    }
+
     .productos__conteiner{
         grid-auto-rows: none;
         grid-template-rows: 48rem 48rem 37rem 37rem;
         gap: 5rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
     }
 
     .productos__basico > img{
@@ -1109,12 +1115,12 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: center;
+        flex-wrap: wrap;
     }
 
     .productos__menu--lista ul li{
         font-size: 0.8rem;
         margin: 0px 12px;
-    
     }
 
 
@@ -1130,7 +1136,8 @@ footer {
     .productos--lista ul{
         display: flex;
         flex-direction: row;
-        justify-content: center;        align-items: center;
+        justify-content: center;       
+        align-items: center;
         flex-wrap: wrap;
     }
 
@@ -1323,7 +1330,19 @@ footer {
         font-size: 14px;
     }
 
-    .clientes {
+    .productos__conteiner{
+        grid-template-rows: 46rem 42rem 32rem 32rem;
+    }
+
+    .menu__menu{
+        height:1.5rem;
+    }
+    
+    .menu__menu a{
+        font-size: 1rem;
+    }
+    
+    .clientes{
         grid-auto-rows: 20rem;
     }
 
@@ -1506,6 +1525,10 @@ footer {
 
     .nosotros__text p{
         font-size: 12px;
+    }
+
+    .productos__conteiner{
+        grid-template-rows: 46rem 38rem 28rem 28rem;
     }
 
     .clientes{
@@ -1725,6 +1748,14 @@ footer {
 @media screen and (max-width:450px){
     .nosotros__text p{
         font-size: 10px;
+    }
+
+    .menu__menu{
+        height:1rem;
+    }
+    
+    .menu__menu a{
+        font-size: 0.8rem;
     }
 }
 
