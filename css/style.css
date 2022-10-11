@@ -893,6 +893,7 @@ main{
     flex-direction: row;
     justify-content: center;
     margin: 1rem;
+    flex-wrap: wrap;
 }
 
 .contacto__form--1 label{
@@ -905,6 +906,7 @@ main{
     flex-direction: row;
     justify-content: center;
     margin: 1rem;
+    flex-wrap: wrap;
 }
 
 .contacto__form--2 label{
@@ -924,6 +926,11 @@ main{
     font-weight: bold;
 }
 
+.contacto__form--3-2{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .contacto__form--3-2 div{
     margin-left: 0.5rem;
 }
@@ -934,11 +941,17 @@ main{
     flex-direction: row;
     justify-content: center;
     margin: 1rem;
+    flex-wrap: wrap;
 }
 
 .contacto__form--4 > div > label{
     margin-left: 1rem;
     font-weight: bold;
+}
+
+.contacto__form--4-1{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .contacto__form--4-1 div{
@@ -972,6 +985,26 @@ main{
     transform: scale(1.06);
 }
 
+.tpn__fondo{
+    background: rgb(42, 5, 52);
+    background: linear-gradient(90deg, rgba(42, 5, 52, 1) 0%, rgba(46, 177, 201, 1) 100%, rgba(122, 22, 171, 1) 100%);
+}
+
+.tpn__logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: rgb(42, 5, 52);
+    background: linear-gradient(90deg, rgba(42, 5, 52, 1) 0%, rgba(46, 177, 201, 1) 100%, rgba(122, 22, 171, 1) 100%);
+}
+
+.tpn__logo img{
+    width: 16rem;
+}
+
+.g-3 label{
+    color: #ffffff;
+}
 
 /* FOOTER */
 

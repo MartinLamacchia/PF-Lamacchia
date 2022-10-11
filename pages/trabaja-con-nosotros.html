@@ -1,63 +1,171 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/icono.png">
+    <link rel="shortcut icon" href="../img/icono.png">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Yantar Trabajo</title>
 </head>
-<body>
-    <header>
-        <img src="../img/Logotipo.png" alt="logo yantar" width="250px">
-    </header>
-    <main>
-        <!--Aca va un formulario de trabajo-->
-        <form>
-            <label for="nombre">Nombre:</label>
-            <input type="text" name="nombre">
-            <label for="apellido">Apellido:</label>
-            <input type="text" name="apellido">
-            <label for="correo">Email</label>
-            <input type="email" name="correo">
-            <label for="telefono">Telefono</label>
-            <input type="number" name="telefono">
-            <label for="dni">Numero de DNI</label>
-            <input type="number" name="dni">
-            <label for="fechaDeCumpleanios">Fecha de Nacimiento</label>
-            <input type="date" name="fechaDeCumpleanios" min="1957-09-01" max="2004-09-30">
-            <label for="provincia">Provincia</label>
-            <input type="text" name="provincia">
-            <label for="localidad">Localidad</label>
-            <input type="text" name="localidad">
-            <label for="Barrio">Barrio</label>
-            <input type="text" name="barrio">
-            <label for="calle">Calle</label>
-            <input type="text" name="calle">
-            <label for="piso">Piso/Dpto</label>
-            <input type="text" name="piso">
-            <div>
-                <label for="experiencia">Tenes Experiencia</label>
-                <div>Si</div>
-                <input type="radio" name="experiencia" value="si">
-                <div>No</div>
-                <input type="radio" name="experiencia" value="no">
+
+<body id="tpn__fondo">
+    <div class="tpn__fondo">
+        <header>
+            <div class="tpn__logo">
+                <img src="../img/Logotipo.png" alt="logo yantar">
             </div>
-        </form>
-    </main>
-    <footer>
-        <div>
-            <img src="../img/Logotipo.png" alt="Logo" width="100px" height="100px">
-        </div>
-        <div>
-            <h3>Telefono</h3>
-            <h3>Email</h3>
-        </div>
-        <div>
-            <a href="https://www.instagram.com/yantar.catering/" target="_blank"><img src="../img/logo-instagram.png" alt="icono-instagram" width="40px"></a>
-            <a href="https://www.facebook.com/" target="_blank"><img src="../img/logo-facebook.png" alt="icono-instagram" width="47px"></a>
-        </div>
-        <p>&copy;<a href="https://github.com/Martin-L86" target="_blank">Pagina creada por Martin Lamacchia</a></p>
-    </footer>
+        </header>
+        <main>
+
+            <!-- FORMULARIO BOOSTRAP -->
+            <form class="row g-3">
+                <div class="col-md-4">
+                    <label for="inputEmail4" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-4">
+                    <label for="inputPassword4" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="inputPassword4">
+                </div>
+                <div class="col-md-4">
+                    <label for="inputAddress" class="form-label">Nacionalidad</label>
+                    <input type="text" class="form-control" id="inputAddress">
+                </div>
+                <div class="col-md-4">
+                    <label for="inputEmail4" class="form-label">Tipo</label>
+                    <input type="text" class="form-control" id="inputEmail4" placeholder="DNI...">
+                </div>
+                <div class="col-md-4">
+                    <label for="inputPassword4" class="form-label">Numero</label>
+                    <input type="number" class="form-control" id="inputPassword4">
+                </div>
+                <div class="col-md-4">
+                    <label for="inputAddress" class="form-label">Ciudad</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="Buenos Aires">
+                </div>
+                <div class="col-md-10">
+                    <label for="inputAddress2" class="form-label">Direccion</label>
+                    <input type="text" class="form-control" id="inputAddress2"
+                        placeholder="Calle, numero, Piso, Dpto, Localidad ">
+                </div>
+                <div class="col-md-2">
+                    <label for="inputZip" class="form-label">Codigo Postal</label>
+                    <input type="text" class="form-control" id="inputZip">
+                </div>
+                <div class="col-md-4">
+                    <label for="inputState" class="form-label">Tenes Experiencia</label>
+                    <select id="inputState" class="form-select">
+                        <option selected>Selecciona...</option>
+                        <option>Nada</option>
+                        <option>Poco</option>
+                        <option>Bastante</option>
+                        <option>Mucha</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <label for="inputCity" class="form-label">Donde Trabajaste</label>
+                    <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-4">
+                    <label for="inputAddress" class="form-label">Telefono</label>
+                    <input type="number" class="form-control" id="inputAddress">
+                </div>
+                <div class="col-5">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Preferencia de contacto
+                        </label>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="inputEmail4" class="form-label">Mail</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="juanpedrozi@ejemplo.com">
+                </div>
+                <div class="col-5">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Preferencia de contacto
+                        </label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Sign in</button>
+                </div>
+            </form>
+
+
+
+
+            <!--Aca va un formulario de trabajo-->
+            <!-- <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre">
+                <label for="apellido">Apellido:</label>
+                <input type="text" name="apellido">
+                <label for="correo">Email</label>
+                <input type="email" name="correo">
+                <label for="telefono">Telefono</label>
+                <input type="number" name="telefono">
+                <label for="dni">Numero de DNI</label>
+                <input type="number" name="dni">
+                <label for="fechaDeCumpleanios">Fecha de Nacimiento</label>
+                <input type="date" name="fechaDeCumpleanios" min="1957-09-01" max="2004-09-30">
+                <label for="provincia">Provincia</label>
+                <input type="text" name="provincia">
+                <label for="localidad">Localidad</label>
+                <input type="text" name="localidad">
+                <label for="Barrio">Barrio</label>
+                <input type="text" name="barrio">
+                <label for="calle">Calle</label>
+                <input type="text" name="calle">
+                <label for="piso">Piso/Dpto</label>
+                <input type="text" name="piso">
+                <div>
+                    <label for="experiencia">Tenes Experiencia</label>
+                    <div>Si</div>
+                    <input type="radio" name="experiencia" value="si">
+                    <div>No</div>
+                    <input type="radio" name="experiencia" value="no">
+                </div>
+            </form> -->
+        </main>
+        <footer>
+            <!-- LOGO FOOTER -->
+            <div class="footer">
+                <div class="footer__conteiner">
+                    <div class="footer__logo">
+                        <img src="../img/Logotipo.png" alt="Logo" width="100px" height="100px">
+                    </div>
+                    <!-- CONTACTO FOOTER -->
+                    <div class="footer__contacto">
+                        <h3 class="footer__contacto__num">0800-292-6827</h3>
+                        <h3>yantar.catering2000@gmail.com</h3>
+                    </div>
+                    <!-- REDES FOOTER -->
+                    <div class="footer__redes">
+                        <a id="instagram" href="https://www.instagram.com/yantar.catering/" target="_blank"><img
+                                src="../img/instagram.png" alt="icono-instagram" width="40px"></a>
+                        <a href="https://www.facebook.com/" target="_blank"><img src="../img/facebook.png"
+                                alt="icono-instagram" width="47px"></a>
+                        <a href="https://twitter.com/?lang=es" target="_blank"><img src="../img/twitter.png"
+                                alt="icono-instagram" width="47px"></a>
+                    </div>
+                </div>
+                <!-- COPY GIT ML -->
+                <div class="footer__gitml">
+                    <p>&copy;<a href="https://github.com/Martin-L86" target="_blank">Pagina creada por Martin
+                            Lamacchia</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <script src="../js/bootstrap.min.js"></script>
+    </div>
 </body>
+
 </html>
