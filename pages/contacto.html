@@ -45,30 +45,37 @@
         </div>
     </header>
     <main>
-        <div class="contacto__title">
-            <h2>Contactenos</h2>
-        </div>
-        <section>
-            <div class="contacto">
-                <div class="contacto__form">
-                    <form>
+        <section class="contacto">
+            <img src="../img/contacto_grande.jpg" alt="">
+            <div class="contacto__form">
+                <div class="contacto__title">
+                    <h2>Contactenos</h2>
+                </div>
+                <form class="contacto__form--form">
+                    <div class="contacto__form--1">
                         <label for="nombre">Nombre:</label>
                         <input type="text" name="nombre">
                         <label for="apellido">Apellido:</label>
                         <input type="text" name="apellido">
+                    </div>
+                    <div class="contacto__form--2">
                         <label for="correo">Email</label>
                         <input type="email" name="correo">
                         <label for="telefono">Telefono</label>
                         <input type="number" name="telefono">
-                        <label for="tipoDeEvento">Tipo de Evento</label>
-                        <select name="tipoDeEvento">
-                            <option value="cocktail">Cocktail</option>
-                            <option value="lunch">Lunch</option>
-                            <option value="casamiento">Casamiento</option>
-                            <option value="cumpleanios">Cumpleaños</option>
-                            <option value="aniversario">Aniversario</option>
-                        </select>
-                        <div>
+                    </div>
+                    <div class="contacto__form--3">
+                        <div class="contacto__form--3-1">
+                            <label for="tipoDeEvento">Tipo de Evento</label>
+                            <select name="tipoDeEvento">
+                                <option value="cocktail">Cocktail</option>
+                                <option value="lunch">Lunch</option>
+                                <option value="casamiento">Casamiento</option>
+                                <option value="cumpleanios">Cumpleaños</option>
+                                <option value="aniversario">Aniversario</option>
+                            </select>
+                        </div>
+                        <div class="contacto__form--3-2">
                             <label for="lugarDelEvento">Lugar del Evento</label>
                             <div>Salon de Fiesta</div>
                             <input type="radio" name="lugarDelEvento" value="salonDeFiesta">
@@ -77,11 +84,13 @@
                             <div>Casa Particular</div>
                             <input type="radio" name="lugarDelEvento" value="casaParticular">
                         </div>
+                    </div>
+                    <div class="contacto__form--4">
                         <label for="invitados">Numero de Invitados</label>
                         <input type="number" name="invitados">
                         <label for="fechaDelEvento">Fecha Del Evento</label>
                         <input type="date" name="fechaDelEvento" min="2022-09-01" max="2023-08-31">
-                        <div>
+                        <div class="contacto__form--4-1">
                             <label for="inicioDelEvento">Inicio del Evento</label>
                             <div>Mañana</div>
                             <input type="radio" name="inicioDelEvento" value="mañana">
@@ -90,11 +99,15 @@
                             <div>Noche</div>
                             <input type="radio" name="inicioDelEvento" value="noche">
                         </div>
+                    </div>
+                    <div class="contacto__form--5">
                         <label for="mensaje">Mensaje</label>
-                        <textarea name="mensaje" id="" cols="30" rows="10"></textarea>
+                        <textarea name="mensaje" id="" cols="100" rows="5"></textarea>
+                    </div>
+                    <div class="contacto__boton">
                         <input type="submit" value="Enviar">
-                    </form>
-                </div>
+                    </div>
+                </form>
             </div>
         </section>
     </main>
