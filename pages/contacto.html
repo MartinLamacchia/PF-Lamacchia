@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../img/icono.png">
     <script src="https://kit.fontawesome.com/ce088edb02.js" crossorigin="anonymous"></script>
-    <!-- <link rel="stylesheet" href="./css/estilos.css"> -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <!-- <link rel="stylesheet" href="../css/style.css"> -->
     <title>Yantar Contacto</title>
 </head>
 
@@ -58,60 +58,67 @@
                     <h2>Contactenos</h2>
                 </div>
                 <form class="contacto__form--form">
-                    <div class="contacto__form--1">
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" name="nombre">
-                        <label for="apellido">Apellido:</label>
-                        <input type="text" name="apellido">
-                    </div>
-                    <div class="contacto__form--2">
-                        <label for="correo">Email</label>
-                        <input type="email" name="correo">
-                        <label for="telefono">Telefono</label>
-                        <input type="number" name="telefono">
-                    </div>
-                    <div class="contacto__form--3">
-                        <div class="contacto__form--3-1">
-                            <label for="tipoDeEvento">Tipo de Evento</label>
-                            <select name="tipoDeEvento">
-                                <option value="cocktail">Cocktail</option>
-                                <option value="lunch">Lunch</option>
-                                <option value="casamiento">Casamiento</option>
-                                <option value="cumpleanios">Cumpleaños</option>
-                                <option value="aniversario">Aniversario</option>
-                            </select>
+                    <div class="contacto__form--group">
+                        <div class="contacto__form--1">
+                            <input type="text" id="nombre" class="form__input" placeholder=" ">
+                            <label for="nombre" class="form__label-1">Nombre:</label>
+                            <span class="form__line"></span>
+                            <input type="text" id="apellido" class="form__input" placeholder=" ">
+                            <label for="apellido" class="form__label-2">Apellido:</label>
+                            <span class="form__line"></span>
                         </div>
-                        <div class="contacto__form--3-2">
-                            <label for="lugarDelEvento">Lugar del Evento</label>
-                            <div>Salon de Fiesta</div>
-                            <input type="radio" name="lugarDelEvento" value="salonDeFiesta">
-                            <div>Quinta</div>
-                            <input type="radio" name="lugarDelEvento" value="quinta">
-                            <div>Casa Particular</div>
-                            <input type="radio" name="lugarDelEvento" value="casaParticular">
+                        <div class="contacto__form--2">
+                            <input type="email" id="correo" class="form__input" placeholder=" ">
+                            <label for="correo" class="form__label-1">Email:</label>
+                            <span class="form__line"></span>
+                            <input type="number" id="telefono" class="form__input" placeholder=" ">
+                            <label for="telefono" class="form__label-2">Telefono:</label>
+                            <span class="form__line"></span>
                         </div>
-                    </div>
-                    <div class="contacto__form--4">
-                        <label for="invitados">Numero de Invitados</label>
-                        <input type="number" name="invitados">
-                        <label for="fechaDelEvento">Fecha Del Evento</label>
-                        <input type="date" name="fechaDelEvento" min="2022-09-01" max="2023-08-31">
-                        <div class="contacto__form--4-1">
-                            <label for="inicioDelEvento">Inicio del Evento</label>
-                            <div>Mañana</div>
-                            <input type="radio" name="inicioDelEvento" value="mañana">
-                            <div>Tarde</div>
-                            <input type="radio" name="inicioDelEvento" value="tarde">
-                            <div>Noche</div>
-                            <input type="radio" name="inicioDelEvento" value="noche">
+                        <div class="contacto__form--3">
+                            <div class="contacto__form--3-1">
+                                <label for="tipoDeEvento">Tipo de Evento</label>
+                                <select name="tipoDeEvento">
+                                    <option value="cocktail">Cocktail</option>
+                                    <option value="lunch">Lunch</option>
+                                    <option value="casamiento">Casamiento</option>
+                                    <option value="cumpleanios">Cumpleaños</option>
+                                    <option value="aniversario">Aniversario</option>
+                                </select>
+                            </div>
+                            <div class="contacto__form--3-2">
+                                <label for="lugarDelEvento">Lugar del Evento</label>
+                                <div>Salon de Fiesta</div>
+                                <input type="radio" name="lugarDelEvento" value="salonDeFiesta">
+                                <div>Quinta</div>
+                                <input type="radio" name="lugarDelEvento" value="quinta">
+                                <div>Casa Particular</div>
+                                <input type="radio" name="lugarDelEvento" value="casaParticular">
+                            </div>
                         </div>
-                    </div>
-                    <div class="contacto__form--5">
-                        <label for="mensaje">Mensaje</label>
-                        <textarea name="mensaje" id="" cols="100" rows="5"></textarea>
-                    </div>
-                    <div class="contacto__boton">
-                        <input type="submit" value="Enviar">
+                        <div class="contacto__form--4">
+                            <input type="number" id="invitados" class="form__input" placeholder=" ">
+                            <label for="invitados" class="form__label">Numero de Invitados:</label>
+                            <span class="form__line"></span>
+                            <label for="fechaDelEvento">Fecha Del Evento</label>
+                            <input type="date" name="fechaDelEvento" min="2022-09-01" max="2023-08-31">
+                            <div class="contacto__form--4-1">
+                                <label for="inicioDelEvento">Inicio del Evento</label>
+                                <div>Mañana</div>
+                                <input type="radio" name="inicioDelEvento" value="mañana">
+                                <div>Tarde</div>
+                                <input type="radio" name="inicioDelEvento" value="tarde">
+                                <div>Noche</div>
+                                <input type="radio" name="inicioDelEvento" value="noche">
+                            </div>
+                        </div>
+                        <div class="contacto__form--5">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea name="mensaje" id="" cols="100" rows="5"></textarea>
+                        </div>
+                        <div class="contacto__boton">
+                            <input type="submit" value="Enviar">
+                        </div>
                     </div>
                 </form>
             </div>
@@ -142,7 +149,8 @@
             </div>
             <!-- COPY GIT ML -->
             <div class="footer__gitml">
-                <p>&copy;<a href="https://github.com/MartinLamacchia/PreEntrega2-Lamacchia" target="_blank">Pagina creada por Martin Lamacchia</a>
+                <p>&copy;<a href="https://github.com/MartinLamacchia/PreEntrega2-Lamacchia" target="_blank">Pagina
+                        creada por Martin Lamacchia</a>
                 </p>
             </div>
         </div>

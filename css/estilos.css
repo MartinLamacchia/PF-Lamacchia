@@ -605,6 +605,169 @@ main .clientes {
           background-color: #304293;
           color: white; }
 
+/*----PAGE CONTACTO------*/
+main .contacto {
+  width: 100%;
+  display: flex;
+  flex-direction: row; }
+  main .contacto img {
+    width: 30%;
+    margin-bottom: 2rem; }
+  main .contacto .contacto__form {
+    width: 80%;
+    max-width: 900px;
+    margin: auto;
+    padding: 2.5rem 3rem;
+    text-align: center; }
+    main .contacto .contacto__form .contacto__title h2 {
+      font-family: 'Nunito', sans-serif;
+      font-size: 30px;
+      text-align: center; }
+    main .contacto .contacto__form .contacto__form--form {
+      margin-top: 3rem;
+      display: grid; }
+      main .contacto .contacto__form .contacto__form--form .contacto__form--group {
+        position: relative; }
+        main .contacto .contacto__form .contacto__form--form .contacto__form--group .contacto__form--1 {
+          margin-bottom: 1rem; }
+          main .contacto .contacto__form .contacto__form--form .contacto__form--group .contacto__form--1 .form__label-1 {
+            margin-left: 0.5rem;
+            color: black;
+            cursor: pointer;
+            position: absolute;
+            top: 0px;
+            left: 80px;
+            transform: translateY(10px);
+            transition: 0.5s, color 0.3s; }
+          main .contacto .contacto__form .contacto__form--form .contacto__form--group .contacto__form--1 .form__label-2 {
+            margin-left: 0.5rem;
+            color: black;
+            cursor: pointer;
+            position: absolute;
+            top: 0px;
+            left: 415px;
+            transform: translateY(10px);
+            transition: 0.5s, color 0.3s; }
+          main .contacto .contacto__form .contacto__form--form .contacto__form--group .contacto__form--1 .form__input {
+            width: 40%;
+            background: none;
+            color: black;
+            font-size: 1rem;
+            padding: 0.6rem 0.3rem;
+            margin-left: 0.6rem;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid #304293; }
+          main .contacto .contacto__form .contacto__form--form .contacto__form--group .contacto__form--1 .form__input:focus + .form__label-1, main .contacto .contacto__form .contacto__form--form .contacto__form--group .contacto__form--1 .form__input:not(:placeholder-shown) + .form__label-1 {
+            transform: translateY(-12px) scale(0.7);
+            transform-origin: left top;
+            color: #304293; }
+          main .contacto .contacto__form .contacto__form--form .contacto__form--group .contacto__form--1 .form__input:focus + .form__label-2, main .contacto .contacto__form .contacto__form--form .contacto__form--group .contacto__form--1 .form__input:not(:placeholder-shown) + .form__label-2 {
+            transform: translateY(-12px) scale(0.7);
+            transform-origin: left top;
+            color: #304293; }
+        main .contacto .contacto__form .contacto__form--form .contacto__form--group .contacto__form--2 .form__label-1 {
+          margin-left: 0.5rem;
+          color: black;
+          cursor: pointer;
+          position: absolute;
+          top: 58px;
+          left: 80px;
+          transform: translateY(10px);
+          transition: 0.5s, color 0.3s; }
+        main .contacto .contacto__form .contacto__form--form .contacto__form--group .contacto__form--2 .form__label-2 {
+          margin-left: 0.5rem;
+          color: black;
+          cursor: pointer;
+          position: absolute;
+          top: 58px;
+          left: 415px;
+          transform: translateY(10px);
+          transition: 0.5s, color 0.3s; }
+        main .contacto .contacto__form .contacto__form--form .contacto__form--group .contacto__form--2 .form__input {
+          width: 40%;
+          background: none;
+          color: black;
+          font-size: 1rem;
+          padding: 0.6rem 0.3rem;
+          margin-left: 0.6rem;
+          border: none;
+          outline: none;
+          border-bottom: 1px solid #304293; }
+        main .contacto .contacto__form .contacto__form--form .contacto__form--group .contacto__form--2 .form__input:focus + .form__label-1, main .contacto .contacto__form .contacto__form--form .contacto__form--group .contacto__form--2 .form__input:not(:placeholder-shown) + .form__label-1 {
+          transform: translateY(-12px) scale(0.7);
+          transform-origin: left top;
+          color: #304293; }
+        main .contacto .contacto__form .contacto__form--form .contacto__form--group .contacto__form--2 .form__input:focus + .form__label-2, main .contacto .contacto__form .contacto__form--form .contacto__form--group .contacto__form--2 .form__input:not(:placeholder-shown) + .form__label-2 {
+          transform: translateY(-12px) scale(0.7);
+          transform-origin: left top;
+          color: #304293; }
+        main .contacto .contacto__form .contacto__form--form .contacto__form--group .contacto__form--3 > div {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          margin: 1rem; }
+          main .contacto .contacto__form .contacto__form--form .contacto__form--group .contacto__form--3 > div > label {
+            margin-left: 1rem;
+            font-weight: bold; }
+        main .contacto .contacto__form .contacto__form--form .contacto__form--group .contacto__form--3 .contacto__form--3-2 {
+          display: flex;
+          flex-wrap: wrap; }
+          main .contacto .contacto__form .contacto__form--form .contacto__form--group .contacto__form--3 .contacto__form--3-2 div {
+            margin-left: 0.5rem; }
+        main .contacto .contacto__form .contacto__form--form .contacto__form--group .contacto__form--4 .form__label {
+          margin-left: 0.5rem;
+          margin-bottom: 3rem;
+          color: black;
+          cursor: pointer;
+          position: absolute;
+          top: 190px;
+          left: 118px;
+          transform: translateY(10px);
+          transition: 0.5s, color 0.3s; }
+        main .contacto .contacto__form .contacto__form--form .contacto__form--group .contacto__form--4 .form__input {
+          width: 30%;
+          background: none;
+          color: black;
+          font-size: 1rem;
+          padding: 0.6rem 0.3rem;
+          margin-left: 5rem;
+          margin-bottom: 1rem;
+          border: none;
+          outline: none;
+          border-bottom: 1px solid #304293; }
+        main .contacto .contacto__form .contacto__form--form .contacto__form--group .contacto__form--4 .form__input:focus + .form__label, main .contacto .contacto__form .contacto__form--form .contacto__form--group .contacto__form--4 .form__input:not(:placeholder-shown) + .form__label {
+          transform: translateY(-12px) scale(0.7);
+          transform-origin: left top;
+          color: #304293; }
+        main .contacto .contacto__form .contacto__form--form .contacto__form--group .contacto__form--4 .form__line {
+          margin-left: 10rem; }
+        main .contacto .contacto__form .contacto__form--form .contacto__form--group .contacto__form--4 .contacto__form--4-1 {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center; }
+          main .contacto .contacto__form .contacto__form--form .contacto__form--group .contacto__form--4 .contacto__form--4-1 div {
+            margin-left: 0.5rem; }
+        main .contacto .contacto__form .contacto__form--form .contacto__form--group .contacto__form--5 {
+          display: flex;
+          flex-direction: column; }
+          main .contacto .contacto__form .contacto__form--form .contacto__form--group .contacto__form--5 textarea {
+            resize: none; }
+        main .contacto .contacto__form .contacto__form--form .contacto__form--group .contacto__boton input {
+          font-size: 1.2rem;
+          font-weight: bold;
+          padding: 10px 20px;
+          border-radius: 20px;
+          border: 1px solid rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+          color: #ffffff;
+          background-color: #cb9736; }
+          main .contacto .contacto__form .contacto__form--form .contacto__form--group .contacto__boton input:hover {
+            background-color: white;
+            color: #cb9736;
+            transform: scale(1.06); }
+
 .tpn__fondo {
   background: #2a0534;
   background: linear-gradient(90deg, #2a0534 0%, #2eb1c9 100%, #7a16ab 100%); }
