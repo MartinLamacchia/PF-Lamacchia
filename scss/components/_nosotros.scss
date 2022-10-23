@@ -1,0 +1,28 @@
+/*----NOSOTROS------*/
+
+main{
+    .nosotros {
+        width: $m-100;
+        height: 80vh;
+        background-image: url(../img/nosotros_grande.jpg);
+        background-size: 30% calc(100vh - 160px);
+        background-repeat: no-repeat;
+        @extend %flex-dir;
+    
+        .nosotros__img {
+            display: none;
+        }
+    
+        .nosotros__text {
+            width: 60%;
+            @extend %flex-dir;
+            position: relative;
+            top: 8rem;
+            left: 35%;
+    
+            p {
+                font-size: 17px;
+            }
+        }
+    }
+}

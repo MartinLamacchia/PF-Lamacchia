@@ -1,0 +1,36 @@
+.tpn__fondo {
+    background: rgb(42, 5, 52);
+    background: linear-gradient(90deg, rgba(42, 5, 52, 1) 0%, rgba(46, 177, 201, 1) 100%, rgba(122, 22, 171, 1) 100%);
+
+    .tpn__logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background: rgb(42, 5, 52);
+        background: linear-gradient(90deg, rgba(42, 5, 52, 1) 0%, rgba(46, 177, 201, 1) 100%, rgba(122, 22, 171, 1) 100%);
+
+        img {
+            width: 16rem;
+        }
+    }
+}
+
+.g-3 {
+    label {
+        color: #ffffff;
+    }
+
+    div {
+        .btn-dir {
+            @extend %flex;
+            .btn-color {
+                @include botones ($color-principal);
+
+                &:hover {
+                    @include botones (nth($color-generales, 2));
+                }
+            }
+        }
+
+    }
+}

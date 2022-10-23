@@ -1,0 +1,1209 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+header .container__menu .menu, header .container__menu .menu > nav > ul > li > a, main .hero .hero__hero, main .hero .hero__hero .hero__text, main .hero .hero__hero .hero__boton, main .productos__volver, main .clientes__title, main .clientes .clientes__marca--coder, main .clientes .clientes__marca--ae, main .clientes .clientes__marca--coca, main .clientes .clientes__marca--arg, main .clientes .clientes__marca--velez, main .clientes .clientes__marca--berthe, .g-3 div .btn-dir, footer .footer__conteiner .footer__contacto, footer .footer__gitml {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+main .nosotros, main .nosotros .nosotros__text, main .productos__conteiner .productos__basico .productos__menu--lista, main .productos__conteiner .productos__premium .productos__menu--lista {
+  display: flex;
+  flex-direction: column; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif; }
+
+/* GRID CONTENEDOR */
+.grid__conteiner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 128px auto 150px;
+  gap: 0px 0px;
+  grid-template-areas: "header header header" "main main main" "footer footer footer"; }
+
+header .container__menu .menu, header .container__menu .menu > nav > ul > li > a, main .hero .hero__hero, main .hero .hero__hero .hero__text, main .hero .hero__hero .hero__boton, main .productos__volver, main .clientes__title, main .clientes .clientes__marca--coder, main .clientes .clientes__marca--ae, main .clientes .clientes__marca--coca, main .clientes .clientes__marca--arg, main .clientes .clientes__marca--velez, main .clientes .clientes__marca--berthe, .g-3 div .btn-dir, footer .footer__conteiner .footer__contacto, footer .footer__gitml {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+main .nosotros, main .nosotros .nosotros__text, main .productos__conteiner .productos__basico .productos__menu--lista, main .productos__conteiner .productos__premium .productos__menu--lista {
+  display: flex;
+  flex-direction: column; }
+
+/*-----HEADER-----*/
+header {
+  width: 100%;
+  background-color: white;
+  grid-area: header; }
+  header .header__superior {
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px; }
+    header .header__superior img {
+      width: 90px; }
+    header .header__superior input {
+      width: 250px;
+      padding: 10px; }
+  header .container__menu {
+    width: 100%;
+    height: 50px;
+    background: #2a0534;
+    background: linear-gradient(90deg, #2a0534 0%, #2eb1c9 100%, #7a16ab 100%);
+    padding: 0px 20px;
+    display: flex; }
+    header .container__menu .menu__logo--movil {
+      display: none; }
+      header .container__menu .menu__logo--movil img {
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        right: 1rem; }
+    header .container__menu .menu {
+      width: 100%;
+      height: 100%; }
+      header .container__menu .menu #check__menu {
+        display: none; }
+      header .container__menu .menu label {
+        width: 26px;
+        height: 70px;
+        display: none; }
+        header .container__menu .menu label .icon__menu {
+          font-size: 26px;
+          color: white;
+          cursor: pointer;
+          width: 26px;
+          height: 100%;
+          display: none;
+          align-items: center; }
+      header .container__menu .menu > nav {
+        height: 100%; }
+        header .container__menu .menu > nav > ul {
+          height: 100%;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center; }
+          header .container__menu .menu > nav > ul > li {
+            height: 100%;
+            list-style: none;
+            position: relative;
+            margin: 0px 8px; }
+            header .container__menu .menu > nav > ul > li ul {
+              width: 200px;
+              display: flex;
+              flex-direction: column;
+              background-color: white;
+              list-style: none;
+              position: absolute;
+              top: 70px;
+              left: -15px;
+              padding: 14px 0px;
+              visibility: hidden;
+              opacity: 0;
+              box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+              border-radius: 20px;
+              z-index: 10; }
+            header .container__menu .menu > nav > ul > li:hover ul {
+              visibility: visible;
+              opacity: 1;
+              top: 50px;
+              z-index: 10; }
+              header .container__menu .menu > nav > ul > li:hover ul li a {
+                display: block;
+                color: #304293;
+                padding: 8px;
+                font-size: 18px;
+                font-family: 'Nunito', sans-serif;
+                text-decoration: none;
+                padding-left: 14px;
+                margin-top: 10px;
+                transition: 300ms ease; }
+                header .container__menu .menu > nav > ul > li:hover ul li a:hover {
+                  background-color: #304293;
+                  color: white;
+                  transform: scale(1.1);
+                  padding-left: 30px;
+                  font-size: 18px;
+                  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); }
+              header .container__menu .menu > nav > ul > li:hover ul::before {
+                content: "";
+                width: 0px;
+                height: 0px;
+                border-left: 12px solid transparent;
+                border-right: 12px solid transparent;
+                border-bottom: 12px solid white;
+                position: absolute;
+                top: -12px;
+                left: 40px; }
+            header .container__menu .menu > nav > ul > li:first-child > a {
+              background-image: url(../img/logo-home.png);
+              background-size: 30px;
+              background-repeat: no-repeat;
+              background-position: center center; }
+              header .container__menu .menu > nav > ul > li:first-child > a#selected {
+                transform: scale(1.2);
+                background-color: #cb9736; }
+            header .container__menu .menu > nav > ul > li > a {
+              width: 100%;
+              height: 100%;
+              color: white;
+              font-size: 20px;
+              font-family: 'Nunito', sans-serif;
+              text-decoration: none;
+              padding: 25px;
+              transition: all 300ms ease; }
+              header .container__menu .menu > nav > ul > li > a:hover {
+                transform: scale(1.1);
+                color: #cb9736; }
+              header .container__menu .menu > nav > ul > li > a#selected {
+                transform: scale(1.2);
+                color: #cb9736; }
+
+/* MAIN */
+main {
+  width: 100%;
+  grid-area: main; }
+  main .hero {
+    width: 100%;
+    height: calc(100vh - 160px);
+    margin-top: 32px;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/hero2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; }
+    main .hero .hero__hero {
+      width: 100%;
+      height: calc(100vh - 160px);
+      flex-direction: column; }
+      main .hero .hero__hero .hero__text {
+        color: #cb9736;
+        font-family: 'Nunito', sans-serif; }
+      main .hero .hero__hero .hero__text--h1 {
+        font-size: 7rem;
+        margin-top: 2rem;
+        display: flex; }
+      main .hero .hero__hero .hero__text--p {
+        font-size: 2rem; }
+      main .hero .hero__hero .hero__boton {
+        width: 100%;
+        height: 10rem; }
+        main .hero .hero__hero .hero__boton input {
+          font-size: 1.2rem;
+          font-weight: bold;
+          padding: 10px 20px;
+          border-radius: 20px;
+          border: 1px solid rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+          color: #ffffff;
+          background-color: #cb9736; }
+          main .hero .hero__hero .hero__boton input:hover {
+            background-color: white;
+            color: #cb9736;
+            transform: scale(1.06); }
+  main .galeria__title {
+    text-align: center;
+    font-size: 3rem;
+    padding: 20px 0px; }
+  main .galeria {
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    padding-left: 150px;
+    padding-right: 150px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 250px;
+    grid-template-areas: "img1 img1 img2" "img3 img4 img4" "img3 img5 img6" "img7 img7 img8" "img9 img9 img9";
+    gap: 0.8em; }
+    main .galeria .galeria__img--img1 {
+      grid-area: img1; }
+      main .galeria .galeria__img--img1 .galeria__picture {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5px 10px; }
+    main .galeria .galeria__img--img2 {
+      grid-area: img2; }
+      main .galeria .galeria__img--img2 .galeria__picture {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5px 10px; }
+    main .galeria .galeria__img--img3 {
+      grid-area: img3; }
+      main .galeria .galeria__img--img3 .galeria__picture {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5px 10px; }
+    main .galeria .galeria__img--img4 {
+      grid-area: img4; }
+      main .galeria .galeria__img--img4 .galeria__picture {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5px 10px; }
+    main .galeria .galeria__img--img5 {
+      grid-area: img5; }
+      main .galeria .galeria__img--img5 .galeria__picture {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5px 10px; }
+    main .galeria .galeria__img--img6 {
+      grid-area: img6; }
+      main .galeria .galeria__img--img6 .galeria__picture {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5px 10px; }
+    main .galeria .galeria__img--img7 {
+      grid-area: img7; }
+      main .galeria .galeria__img--img7 .galeria__picture {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5px 10px; }
+    main .galeria .galeria__img--img8 {
+      grid-area: img8; }
+      main .galeria .galeria__img--img8 .galeria__picture {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5px 10px; }
+    main .galeria .galeria__img--img9 {
+      grid-area: img9; }
+      main .galeria .galeria__img--img9 .galeria__picture {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5px 10px; }
+  main .fixed {
+    position: fixed;
+    right: 2%;
+    bottom: 13%;
+    background: #3f5efb;
+    background: radial-gradient(circle, #3f5efb 0%, #2cc96b 100%);
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    width: 175px;
+    height: 175px;
+    border-radius: 100%;
+    box-shadow: 18px 16px 20px -4px rgba(0, 0, 0, 0.56);
+    -webkit-box-shadow: 18px 16px 20px -4px rgba(0, 0, 0, 0.56);
+    -moz-box-shadow: 18px 16px 20px -4px rgba(0, 0, 0, 0.56); }
+    main .fixed div {
+      margin-top: 35px; }
+
+/*----NOSOTROS------*/
+main .nosotros {
+  width: 100%;
+  height: 80vh;
+  background-image: url(../img/nosotros_grande.jpg);
+  background-size: 30% calc(100vh - 160px);
+  background-repeat: no-repeat; }
+  main .nosotros .nosotros__img {
+    display: none; }
+  main .nosotros .nosotros__text {
+    width: 60%;
+    position: relative;
+    top: 8rem;
+    left: 35%; }
+    main .nosotros .nosotros__text p {
+      font-size: 17px; }
+
+/*-----PRODUCTOS-----*/
+main #menu__menu {
+  text-align: center;
+  font-size: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem; }
+
+main .menu__menu {
+  width: 100%;
+  height: 7rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
+  main .menu__menu a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #cb9736;
+    transition: all 300ms ease; }
+    main .menu__menu a:hover {
+      transform: scale(1.1);
+      background-color: #cb9736;
+      border-radius: 1.3rem;
+      color: white;
+      padding: 10px; }
+
+main .productos__conteiner {
+  width: 100%;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-auto-rows: 45rem;
+  grid-template-areas: "basico" "premium" "pizza" "viandas";
+  gap: 15rem;
+  justify-items: center; }
+  main .productos__conteiner .productos__basico {
+    width: 80%;
+    grid-area: basico;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 1rem 0; }
+    main .productos__conteiner .productos__basico .productos__menu--lista {
+      justify-content: space-around; }
+    main .productos__conteiner .productos__basico img {
+      width: 50%;
+      border-radius: 0.7rem;
+      box-shadow: 7px 6px 12px 2px rgba(0, 0, 0, 0.55);
+      -webkit-box-shadow: 7px 6px 12px 2px rgba(0, 0, 0, 0.55);
+      -moz-box-shadow: 7px 6px 12px 2px rgba(0, 0, 0, 0.55); }
+    main .productos__conteiner .productos__basico .productos__img950 {
+      display: none; }
+  main .productos__conteiner .productos__premium {
+    width: 80%;
+    grid-area: premium;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    main .productos__conteiner .productos__premium .productos__menu--lista {
+      justify-content: space-around; }
+    main .productos__conteiner .productos__premium img {
+      width: 50%;
+      border-radius: 0.7rem;
+      box-shadow: 7px 6px 12px 2px rgba(0, 0, 0, 0.55);
+      -webkit-box-shadow: 7px 6px 12px 2px rgba(0, 0, 0, 0.55);
+      -moz-box-shadow: 7px 6px 12px 2px rgba(0, 0, 0, 0.55); }
+    main .productos__conteiner .productos__premium .productos__img950 {
+      display: none; }
+  main .productos__conteiner .productos__pizzaParty {
+    width: 80%;
+    grid-area: pizza;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row; }
+    main .productos__conteiner .productos__pizzaParty img {
+      width: 50%;
+      border-radius: 0.7rem;
+      box-shadow: 7px 6px 12px 2px rgba(0, 0, 0, 0.55);
+      -webkit-box-shadow: 7px 6px 12px 2px rgba(0, 0, 0, 0.55);
+      -moz-box-shadow: 7px 6px 12px 2px rgba(0, 0, 0, 0.55); }
+    main .productos__conteiner .productos__pizzaParty div ul li {
+      padding-top: 20px; }
+    main .productos__conteiner .productos__pizzaParty .productos__img950 {
+      display: none; }
+  main .productos__conteiner .productos__viandas {
+    width: 100%;
+    grid-area: viandas;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+    main .productos__conteiner .productos__viandas img {
+      width: 50%;
+      height: 80%;
+      border-radius: 0.7rem;
+      box-shadow: 7px 6px 12px 2px rgba(0, 0, 0, 0.55);
+      -webkit-box-shadow: 7px 6px 12px 2px rgba(0, 0, 0, 0.55);
+      -moz-box-shadow: 7px 6px 12px 2px rgba(0, 0, 0, 0.55);
+      margin-left: 5%; }
+    main .productos__conteiner .productos__viandas div {
+      margin-right: 5%; }
+      main .productos__conteiner .productos__viandas div ul li {
+        padding-top: 10px; }
+    main .productos__conteiner .productos__viandas > div > h3 {
+      padding-top: 10px; }
+    main .productos__conteiner .productos__viandas .productos__img950 {
+      display: none; }
+
+main .productos__volver {
+  width: 100%;
+  height: 10rem; }
+  main .productos__volver input {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    background-color: #cb9736; }
+    main .productos__volver input:hover {
+      background-color: white;
+      color: #cb9736;
+      transform: scale(1.06); }
+
+/*-----PAGE CLIENTES-----*/
+main .clientes__title h1 {
+  font-size: 3rem;
+  padding: 30px 0px; }
+
+main .clientes {
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+  padding-left: 10%;
+  padding-right: 10%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 25rem;
+  grid-template-areas: "coder ae coca" "arg velez berthe";
+  gap: 1.5rem;
+  justify-items: center; }
+  main .clientes .clientes__marca {
+    margin: 0px 20px;
+    border: 2px solid black;
+    border-radius: 12%;
+    box-shadow: 7px 6px 12px 2px rgba(0, 0, 0, 0.55);
+    -webkit-box-shadow: 7px 6px 12px 2px rgba(0, 0, 0, 0.55);
+    -moz-box-shadow: 7px 6px 12px 2px rgba(0, 0, 0, 0.55); }
+    main .clientes .clientes__marca:hover {
+      transform: scale(1.1); }
+    main .clientes .clientes__marca .clientes__picture {
+      object-fit: cover; }
+  main .clientes .clientes__marca--coder {
+    grid-area: coder;
+    width: 100%;
+    flex-direction: column; }
+    main .clientes .clientes__marca--coder img {
+      width: 18rem;
+      border-radius: 10%; }
+    main .clientes .clientes__marca--coder div {
+      text-align: center; }
+      main .clientes .clientes__marca--coder div a {
+        text-decoration: none;
+        color: #cb9736;
+        background-color: white;
+        padding: 0.3rem;
+        border-radius: 10%; }
+        main .clientes .clientes__marca--coder div a:hover {
+          background-color: #cb9736;
+          color: white; }
+  main .clientes .clientes__marca--ae {
+    grid-area: ae;
+    width: 100%;
+    flex-direction: column; }
+    main .clientes .clientes__marca--ae img {
+      width: 18rem; }
+    main .clientes .clientes__marca--ae div {
+      text-align: center; }
+      main .clientes .clientes__marca--ae div h3 {
+        position: relative;
+        top: 108px; }
+      main .clientes .clientes__marca--ae div p {
+        position: relative;
+        top: 108px; }
+      main .clientes .clientes__marca--ae div a {
+        position: relative;
+        top: 108px;
+        text-decoration: none;
+        color: #cb9736;
+        background-color: white;
+        padding: 0.3rem;
+        border-radius: 10%; }
+        main .clientes .clientes__marca--ae div a:hover {
+          background-color: #cb9736;
+          color: white; }
+  main .clientes .clientes__marca--coca {
+    grid-area: coca;
+    width: 100%;
+    flex-direction: column; }
+    main .clientes .clientes__marca--coca img {
+      width: 18rem; }
+    main .clientes .clientes__marca--coca div {
+      text-align: center; }
+      main .clientes .clientes__marca--coca div h3 {
+        position: relative;
+        top: 100px; }
+      main .clientes .clientes__marca--coca div p {
+        position: relative;
+        top: 100px; }
+      main .clientes .clientes__marca--coca div a {
+        position: relative;
+        top: 100px;
+        text-decoration: none;
+        color: #cb9736;
+        background-color: white;
+        padding: 0.3rem;
+        border-radius: 10%; }
+        main .clientes .clientes__marca--coca div a:hover {
+          background-color: #cb9736;
+          color: white; }
+  main .clientes .clientes__marca--arg {
+    grid-area: arg;
+    width: 100%;
+    flex-direction: column; }
+    main .clientes .clientes__marca--arg img {
+      width: 18rem; }
+    main .clientes .clientes__marca--arg div {
+      text-align: center; }
+      main .clientes .clientes__marca--arg div h3 {
+        position: relative;
+        top: 55px; }
+      main .clientes .clientes__marca--arg div p {
+        position: relative;
+        top: 55px; }
+      main .clientes .clientes__marca--arg div a {
+        position: relative;
+        top: 55px;
+        text-decoration: none;
+        color: #cb9736;
+        background-color: white;
+        padding: 0.3rem;
+        border-radius: 10%; }
+        main .clientes .clientes__marca--arg div a:hover {
+          background-color: #cb9736;
+          color: white; }
+  main .clientes .clientes__marca--velez {
+    grid-area: velez;
+    width: 100%;
+    flex-direction: column; }
+    main .clientes .clientes__marca--velez img {
+      width: 16rem; }
+    main .clientes .clientes__marca--velez div {
+      text-align: center; }
+      main .clientes .clientes__marca--velez div h3 {
+        position: relative;
+        top: 20px; }
+      main .clientes .clientes__marca--velez div p {
+        position: relative;
+        top: 20px; }
+      main .clientes .clientes__marca--velez div a {
+        position: relative;
+        top: 20px;
+        text-decoration: none;
+        color: #cb9736;
+        background-color: white;
+        padding: 0.3rem;
+        border-radius: 10%; }
+        main .clientes .clientes__marca--velez div a:hover {
+          background-color: #cb9736;
+          color: white; }
+  main .clientes .clientes__marca--berthe {
+    grid-area: berthe;
+    width: 100%;
+    flex-direction: column; }
+    main .clientes .clientes__marca--berthe img {
+      width: 18rem;
+      border-radius: 100%; }
+    main .clientes .clientes__marca--berthe div {
+      text-align: center; }
+      main .clientes .clientes__marca--berthe div h4 {
+        text-decoration: none;
+        color: #304293;
+        background-color: white;
+        padding: 0.35rem;
+        border-radius: 5%; }
+        main .clientes .clientes__marca--berthe div h4:hover {
+          background-color: #304293;
+          color: white; }
+
+.tpn__fondo {
+  background: #2a0534;
+  background: linear-gradient(90deg, #2a0534 0%, #2eb1c9 100%, #7a16ab 100%); }
+  .tpn__fondo .tpn__logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: #2a0534;
+    background: linear-gradient(90deg, #2a0534 0%, #2eb1c9 100%, #7a16ab 100%); }
+    .tpn__fondo .tpn__logo img {
+      width: 16rem; }
+
+.g-3 label {
+  color: #ffffff; }
+
+.g-3 div .btn-dir .btn-color {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  background-color: #cb9736; }
+  .g-3 div .btn-dir .btn-color:hover {
+    background-color: white;
+    color: #cb9736;
+    transform: scale(1.06); }
+
+/* FOOTER */
+footer {
+  grid-area: footer;
+  width: 100%;
+  background-color: white; }
+  footer .footer__conteiner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    footer .footer__conteiner .footer__logo img {
+      width: 100%; }
+    footer .footer__conteiner .footer__contacto {
+      font-size: 25px;
+      font-family: 'Nunito', sans-serif;
+      color: #304293;
+      flex-direction: column; }
+    footer .footer__conteiner .footer__redes {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      z-index: 10; }
+      footer .footer__conteiner .footer__redes a img {
+        width: 90%;
+        padding-left: 5px; }
+  footer .footer__gitml {
+    font-size: 13px; }
+    footer .footer__gitml p {
+      text-decoration: none;
+      font-family: 'Nunito', sans-serif;
+      color: black; }
+    footer .footer__gitml a {
+      text-decoration: none;
+      font-family: 'Nunito', sans-serif;
+      color: black; }
+  footer .footer__gitml:hover {
+    display: flex;
+    justify-content: center;
+    font-size: 18px; }
+    footer .footer__gitml:hover a {
+      text-decoration: underline;
+      color: #304293; }
+    footer .footer__gitml:hover p {
+      text-decoration: underline;
+      color: #304293; }
+
+/*-----MEDIA QUERY-----*/
+@media screen and (max-width: 1400px) {
+  main .clientes {
+    padding-left: 10%; } }
+
+@media screen and (max-width: 1300px) {
+  main .hero .hero__hero .hero__text--h1 {
+    font-size: 5rem; }
+  main .clientes {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 400px;
+    grid-template-areas: "coder ae" "arg coca" "velez berthe";
+    gap: 1.5rem; }
+    main .clientes .clientes__marca {
+      margin: 0px 10px;
+      width: 21.8rem; } }
+
+@media screen and (max-width: 1200px) {
+  main .galeria {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 200px;
+    grid-template-areas: "img1 img2" "img3 img4" "img5 img6" "img7 img8" "img9 img9"; } }
+
+@media screen and (max-width: 950px) {
+  header .header__superior input {
+    display: none; }
+  main .hero .hero__hero .hero__text--h1 {
+    font-size: 3rem; }
+  main .hero .hero__hero .hero__text--p {
+    font-size: 1rem; }
+  main .hero .hero__hero .hero__boton input {
+    font-size: 0.9rem;
+    padding: 5px 10px; }
+  main .galeria {
+    padding-left: 50px;
+    padding-right: 50px; }
+  main .fixed {
+    display: none; }
+  main .nosotros {
+    background-image: none;
+    height: 100vh; }
+    main .nosotros .nosotros__img {
+      display: flex;
+      width: 100%; }
+      main .nosotros .nosotros__img img {
+        width: 100%;
+        height: 40vh; }
+    main .nosotros .nosotros__text {
+      width: 80%;
+      padding: 5px;
+      top: 2rem;
+      left: 10%; }
+      main .nosotros .nosotros__text .nosotros__text p {
+        font-size: 15px; }
+  main .menu__menu {
+    height: 4rem; }
+  main .productos__conteiner {
+    grid-auto-rows: none;
+    grid-template-rows: 48rem 48rem 37rem 37rem;
+    gap: 5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem; }
+    main .productos__conteiner .productos__basico {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      main .productos__conteiner .productos__basico > img {
+        display: none; }
+      main .productos__conteiner .productos__basico .productos__img950 {
+        display: flex;
+        justify-content: center; }
+        main .productos__conteiner .productos__basico .productos__img950 img {
+          width: 100%; }
+      main .productos__conteiner .productos__basico .productos__menu--lista {
+        justify-content: center;
+        align-items: center; }
+        main .productos__conteiner .productos__basico .productos__menu--lista h2 {
+          margin-bottom: 10px; }
+        main .productos__conteiner .productos__basico .productos__menu--lista h3 {
+          margin-bottom: 8px; }
+        main .productos__conteiner .productos__basico .productos__menu--lista ul {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          flex-wrap: wrap; }
+          main .productos__conteiner .productos__basico .productos__menu--lista ul li {
+            font-size: 0.8rem;
+            margin: 0px 12px; }
+    main .productos__conteiner .productos__premium {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      main .productos__conteiner .productos__premium > img {
+        display: none; }
+      main .productos__conteiner .productos__premium .productos__img950 {
+        display: flex;
+        justify-content: center; }
+        main .productos__conteiner .productos__premium .productos__img950 img {
+          width: 100%; }
+      main .productos__conteiner .productos__premium .productos__menu--lista {
+        justify-content: center;
+        align-items: center; }
+        main .productos__conteiner .productos__premium .productos__menu--lista h2 {
+          margin-bottom: 10px; }
+        main .productos__conteiner .productos__premium .productos__menu--lista h3 {
+          margin-bottom: 8px; }
+        main .productos__conteiner .productos__premium .productos__menu--lista ul {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          flex-wrap: wrap; }
+          main .productos__conteiner .productos__premium .productos__menu--lista ul li {
+            font-size: 0.8rem;
+            margin: 0px 12px; }
+    main .productos__conteiner .productos__pizzaParty {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      main .productos__conteiner .productos__pizzaParty > img {
+        display: none; }
+      main .productos__conteiner .productos__pizzaParty .productos__img950 {
+        display: flex;
+        justify-content: center; }
+        main .productos__conteiner .productos__pizzaParty .productos__img950 img {
+          width: 100%; }
+      main .productos__conteiner .productos__pizzaParty .productos--lista h2 {
+        text-align: center;
+        margin-bottom: 10px; }
+      main .productos__conteiner .productos__pizzaParty .productos--lista h3 {
+        text-align: center; }
+      main .productos__conteiner .productos__pizzaParty .productos--lista ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap; }
+        main .productos__conteiner .productos__pizzaParty .productos--lista ul li {
+          font-size: 0.8rem;
+          margin: 0px 12px; }
+    main .productos__conteiner .productos__viandas {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      main .productos__conteiner .productos__viandas > img {
+        display: none; }
+      main .productos__conteiner .productos__viandas .productos__img950 {
+        display: flex;
+        justify-content: center; }
+        main .productos__conteiner .productos__viandas .productos__img950 img {
+          width: 100%; }
+      main .productos__conteiner .productos__viandas .productos--lista h2 {
+        text-align: center;
+        margin-bottom: 10px; }
+      main .productos__conteiner .productos__viandas .productos--lista h3 {
+        text-align: center; }
+      main .productos__conteiner .productos__viandas .productos--lista ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap; }
+        main .productos__conteiner .productos__viandas .productos--lista ul li {
+          font-size: 0.8rem;
+          margin: 0px 12px; }
+  main .clientes .clientes__marca {
+    width: 16rem; }
+  main .clientes .clientes__marca--coder img {
+    width: 14rem; }
+  main .clientes .clientes__marca--coder > div > h3 {
+    position: relative;
+    top: 1.8rem; }
+  main .clientes .clientes__marca--coder > div > p {
+    position: relative;
+    top: 1.8rem; }
+  main .clientes .clientes__marca--coder > div > a {
+    position: relative;
+    top: 1.8rem; }
+  main .clientes .clientes__marca--ae img {
+    width: 14rem; }
+  main .clientes .clientes__marca--coca img {
+    width: 14rem; }
+  main .clientes .clientes__marca--arg img {
+    width: 14rem; }
+  main .clientes .clientes__marca--arg > div > h3 {
+    position: relative;
+    top: 4.3rem; }
+  main .clientes .clientes__marca--arg > div > p {
+    position: relative;
+    top: 4.3rem; }
+  main .clientes .clientes__marca--arg > div > a {
+    position: relative;
+    top: 4.3rem; }
+  main .clientes .clientes__marca--velez img {
+    width: 14rem; }
+  main .clientes .clientes__marca--berthe img {
+    width: 14rem; }
+  main .clientes .clientes__marca--berthe > div > h3 {
+    position: relative;
+    top: 1.3rem; }
+  main .clientes .clientes__marca--berthe > div > p {
+    position: relative;
+    top: 1.3rem; }
+  main .clientes .clientes__marca--berthe > div > h4 {
+    position: relative;
+    top: 1.3rem; }
+  footer .footer__conteiner .footer__redes {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column; }
+    footer .footer__conteiner .footer__redes a img {
+      width: 70%; } }
+
+@media screen and (max-width: 750px) {
+  .grid__conteiner {
+    grid-template-rows: auto auto 150px; }
+  header .header__superior {
+    padding: 0;
+    margin: 0; }
+    header .header__superior img {
+      display: none; }
+  header .container__menu {
+    height: 100%; }
+    header .container__menu .menu__logo--movil {
+      display: flex;
+      justify-content: center; }
+    header .container__menu .menu {
+      justify-content: flex-start; }
+      header .container__menu .menu label {
+        display: block; }
+        header .container__menu .menu label .icon__menu {
+          display: flex; }
+      header .container__menu .menu #check__menu:checked ~ nav > ul {
+        height: 300px;
+        visibility: visible;
+        opacity: 1; }
+      header .container__menu .menu > nav > ul {
+        flex-direction: column;
+        background: #2a0534;
+        background: linear-gradient(90deg, #2a0534 0%, #2eb1c9 100%, #7a16ab 100%);
+        position: absolute;
+        z-index: 100;
+        left: 0;
+        top: 70px;
+        width: 100%;
+        height: 0px;
+        transition: all 300ms ease;
+        opacity: 0;
+        visibility: hidden;
+        align-items: flex-start; }
+        header .container__menu .menu > nav > ul > li ul {
+          left: 100px;
+          width: 150px; }
+        header .container__menu .menu > nav > ul > li:hover ul {
+          top: -25px; }
+          header .container__menu .menu > nav > ul > li:hover ul li a {
+            font-size: 15px; }
+            header .container__menu .menu > nav > ul > li:hover ul li a:hover {
+              transform: scale(1);
+              font-size: 15px;
+              padding-left: 15px; }
+          header .container__menu .menu > nav > ul > li:hover ul::before {
+            border-right: 12px solid #ffffff;
+            border-top: 12px solid transparent;
+            border-bottom: 12px solid transparent;
+            top: 30px;
+            left: -23px; }
+        header .container__menu .menu > nav > ul > li > a {
+          font-size: 15px;
+          padding: 5px;
+          display: block; }
+        header .container__menu .menu > nav > ul > li:first-child > a {
+          background-size: 20px;
+          padding: 10px 20px;
+          transform: scale(1); }
+          header .container__menu .menu > nav > ul > li:first-child > a:hover {
+            transform: scale(1); }
+          header .container__menu .menu > nav > ul > li:first-child > a#selected {
+            background-color: rgba(0, 0, 0, 0);
+            transform: scale(1); }
+  main .hero {
+    object-fit: cover;
+    background-position: center center;
+    margin-top: 0px; }
+    main .hero .hero__hero .hero__text--h1 {
+      margin-top: 0; }
+  main .nosotros .nosotros__text p {
+    font-size: 14px; }
+  main .menu__menu {
+    height: 1.5rem; }
+    main .menu__menu a {
+      font-size: 1rem; }
+  main .productos__conteiner {
+    grid-template-rows: 46rem 42rem 32rem 32rem; }
+  main .clientes__title h1 {
+    margin-left: 2.5rem; }
+  main .clientes {
+    grid-auto-rows: 20rem; }
+    main .clientes .clientes__marca {
+      width: 12rem; }
+    main .clientes .clientes__marca--coder img {
+      width: 10rem; }
+    main .clientes .clientes__marca--coder > div > h3 {
+      top: 1.4rem;
+      font-size: 0.8rem; }
+    main .clientes .clientes__marca--coder > div > p {
+      top: 1.4rem;
+      font-size: 0.8rem; }
+    main .clientes .clientes__marca--coder > div > a {
+      top: 1.4rem;
+      font-size: 0.8rem; }
+    main .clientes .clientes__marca--ae img {
+      width: 10rem; }
+    main .clientes .clientes__marca--ae > div > h3 {
+      top: 5rem;
+      font-size: 0.8rem; }
+    main .clientes .clientes__marca--ae > div > p {
+      top: 5rem;
+      font-size: 0.8rem; }
+    main .clientes .clientes__marca--ae > div > a {
+      top: 5rem;
+      font-size: 0.8rem; }
+    main .clientes .clientes__marca--coca img {
+      width: 10rem; }
+    main .clientes .clientes__marca--coca > div > h3 {
+      top: 5rem;
+      font-size: 0.8rem; }
+    main .clientes .clientes__marca--coca > div > p {
+      top: 5rem;
+      font-size: 0.8rem; }
+    main .clientes .clientes__marca--coca > div > a {
+      top: 5rem;
+      font-size: 0.8rem; }
+    main .clientes .clientes__marca--arg img {
+      width: 10rem; }
+    main .clientes .clientes__marca--arg > div > h3 {
+      top: 3.5rem;
+      font-size: 0.8rem; }
+    main .clientes .clientes__marca--arg > div > p {
+      top: 3.5rem;
+      font-size: 0.8rem; }
+    main .clientes .clientes__marca--arg > div > a {
+      top: 3.5rem;
+      font-size: 0.8rem; }
+    main .clientes .clientes__marca--velez img {
+      width: 10rem; }
+    main .clientes .clientes__marca--velez > div > h3 {
+      top: 1.4rem;
+      font-size: 0.8rem; }
+    main .clientes .clientes__marca--velez > div > p {
+      top: 1.4rem;
+      font-size: 0.8rem; }
+    main .clientes .clientes__marca--velez > div > a {
+      top: 1.4rem;
+      font-size: 0.8rem; }
+    main .clientes .clientes__marca--berthe img {
+      width: 10rem; }
+    main .clientes .clientes__marca--berthe > div > h3 {
+      top: 1.3rem;
+      font-size: 0.8rem; }
+    main .clientes .clientes__marca--berthe > div > p {
+      top: 1.3rem;
+      font-size: 0.8rem; }
+    main .clientes .clientes__marca--berthe > div > h4 {
+      top: 1.3rem;
+      font-size: 0.8rem; }
+  footer .footer__conteiner .footer__contacto {
+    font-size: 15px; } }
+
+@media screen and (max-width: 550px) {
+  main .hero .hero__hero .hero__text--h1 {
+    font-size: 2rem; }
+  main .hero .hero__hero .hero__text--p {
+    font-size: .8rem; }
+  main .hero .hero__hero .hero__boton input {
+    font-size: 0.9rem;
+    padding: 5px 10px; }
+  main .galeria__title {
+    font-size: 1.5em;
+    padding: 10px 0px; }
+  main .galeria {
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 150px;
+    grid-template-areas: "img1" "img2" "img3" "img4" "img5" "img6" "img7" "img8" "img9"; }
+  main .nosotros .nosotros__text p {
+    font-size: 12px; }
+  main .productos__conteiner {
+    grid-template-rows: 46rem 38rem 28rem 28rem; }
+  main .clientes__title h1 {
+    margin-left: 0;
+    font-size: 2.5rem; }
+  main .clientes {
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 200px;
+    grid-template-areas: "coder" "ae" "arg" "coca" "velez" "berthe"; }
+    main .clientes .clientes__marca {
+      width: 95%; }
+    main .clientes .clientes__marca--coder {
+      flex-direction: row;
+      justify-content: space-around; }
+      main .clientes .clientes__marca--coder img {
+        width: 7rem; }
+      main .clientes .clientes__marca--coder > div {
+        flex-direction: column; }
+        main .clientes .clientes__marca--coder > div > h3 {
+          top: 0;
+          font-size: 0.5rem; }
+        main .clientes .clientes__marca--coder > div > p {
+          top: 0rem;
+          font-size: 0.5rem; }
+        main .clientes .clientes__marca--coder > div > a {
+          top: 0rem;
+          font-size: 0.5rem; }
+    main .clientes .clientes__marca--ae {
+      flex-direction: row;
+      justify-content: space-around; }
+      main .clientes .clientes__marca--ae img {
+        width: 7rem; }
+      main .clientes .clientes__marca--ae > div {
+        flex-direction: column; }
+        main .clientes .clientes__marca--ae > div > h3 {
+          top: 0;
+          font-size: 0.5rem; }
+        main .clientes .clientes__marca--ae > div > p {
+          top: 0rem;
+          font-size: 0.5rem; }
+        main .clientes .clientes__marca--ae > div > a {
+          top: 0rem;
+          font-size: 0.5rem; }
+    main .clientes .clientes__marca--arg {
+      flex-direction: row;
+      justify-content: space-around; }
+      main .clientes .clientes__marca--arg img {
+        width: 7rem; }
+      main .clientes .clientes__marca--arg > div {
+        flex-direction: column; }
+        main .clientes .clientes__marca--arg > div > h3 {
+          top: 0;
+          font-size: 0.5rem; }
+        main .clientes .clientes__marca--arg > div > p {
+          top: 0rem;
+          font-size: 0.5rem; }
+        main .clientes .clientes__marca--arg > div > a {
+          top: 0rem;
+          font-size: 0.5rem; }
+    main .clientes .clientes__marca--coca {
+      flex-direction: row;
+      justify-content: space-around; }
+      main .clientes .clientes__marca--coca img {
+        width: 7rem; }
+      main .clientes .clientes__marca--coca > div {
+        flex-direction: column; }
+        main .clientes .clientes__marca--coca > div > h3 {
+          top: 0;
+          font-size: 0.5rem; }
+        main .clientes .clientes__marca--coca > div > p {
+          top: 0rem;
+          font-size: 0.5rem; }
+        main .clientes .clientes__marca--coca > div > a {
+          top: 0rem;
+          font-size: 0.5rem; }
+    main .clientes .clientes__marca--velez {
+      flex-direction: row;
+      justify-content: space-around; }
+      main .clientes .clientes__marca--velez img {
+        width: 7rem; }
+      main .clientes .clientes__marca--velez > div {
+        flex-direction: column; }
+        main .clientes .clientes__marca--velez > div > h3 {
+          top: 0;
+          font-size: 0.5rem; }
+        main .clientes .clientes__marca--velez > div > p {
+          top: 0rem;
+          font-size: 0.5rem; }
+        main .clientes .clientes__marca--velez > div > a {
+          top: 0rem;
+          font-size: 0.5rem; }
+    main .clientes .clientes__marca--berthe {
+      flex-direction: row;
+      justify-content: space-around; }
+      main .clientes .clientes__marca--berthe img {
+        width: 7rem; }
+      main .clientes .clientes__marca--berthe > div {
+        flex-direction: column; }
+        main .clientes .clientes__marca--berthe > div > h3 {
+          top: 0;
+          font-size: 0.5rem; }
+        main .clientes .clientes__marca--berthe > div > p {
+          top: 0rem;
+          font-size: 0.5rem; }
+        main .clientes .clientes__marca--berthe > div > h4 {
+          top: 0rem;
+          font-size: 0.5rem; }
+  footer .footer__conteiner .footer__logo img {
+    width: 70px;
+    height: 70px; }
+  footer .footer__conteiner .footer__contacto {
+    font-size: 13px; }
+  footer .footer__conteiner .footer__redes a img {
+    width: 50%; }
+  footer .footer__gitml {
+    font-size: 9px; }
+    footer .footer__gitml:hover {
+      font-size: 13px; } }
+
+@media screen and (max-width: 450px) {
+  main .nosotros .nosotros__text p {
+    font-size: 10px; }
+  main .menu__menu {
+    height: 1rem; }
+    main .menu__menu a {
+      font-size: 0.8rem; } }
+
+@media screen and (max-width: 400px) {
+  footer .footer__conteiner {
+    flex-direction: column; }
+    footer .footer__conteiner .footer__redes {
+      flex-direction: row;
+      margin-left: 40px; } }
+
+@media screen and (max-width: 370px) {
+  main .hero .hero__hero .hero__text--h1 {
+    font-size: 1.3rem; }
+  main .hero .hero__hero .hero__text--p {
+    font-size: .5rem; }
+  main .hero .hero__hero .hero__boton input {
+    font-size: 0.7rem;
+    padding: 3px 7px; } }

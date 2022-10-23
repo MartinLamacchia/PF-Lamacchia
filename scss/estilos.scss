@@ -1,0 +1,23 @@
+
+// VARIABLES
+@import "./base/variables";
+
+// GENERALES
+@import "./base/generales";
+
+// HEADER
+@import "./components/header";
+
+// MAIN
+@import "./components/index";
+@import "./components/nosotros";
+@import "./components/productos";
+@import "./components/clientes";
+@import "./components/contactos";
+@import "./components/trabaja-con-nosotros";
+
+// FOOTER
+@import "./components/footer";
+
+// MEDIA QUERY
+@import "./base/media";

@@ -99,7 +99,6 @@ header {
     list-style: none;
     position: relative;
     margin: 0px 8px;
-
 }
 
 .menu nav>ul>li:first-child>a {
@@ -107,7 +106,6 @@ header {
     background-size: 30px;
     background-repeat: no-repeat;
     background-position: center center;
-
 }
 
 .menu nav>ul>li>a {
@@ -174,12 +172,11 @@ header {
     position: absolute;
     top: -12px;
     left: 40px;
-
 }
 
 .menu nav ul li ul li a {
     display: block;
-    color: #1632ab;
+    color: #304293;
     padding: 8px;
     font-size: 18px;
     font-family: 'Nunito', sans-serif;
@@ -219,7 +216,6 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-
 }
 
 /* TEXTO */
@@ -579,6 +575,7 @@ main{
 .clientes__title{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .clientes__title h1{

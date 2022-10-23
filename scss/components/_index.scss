@@ -1,0 +1,170 @@
+
+/* MAIN */
+
+main{
+    width: $m-100;
+    grid-area: main;
+    .hero {
+        width: $m-100;
+        height: calc(100vh - 160px);
+        margin-top: 32px;
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)),
+            url(../img/hero2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        .hero__hero{
+            width: $m-100;
+            height: calc(100vh - 160px);
+            @extend %flex;
+            flex-direction: column;
+            .hero__text {
+                color: $color-principal;
+                font-family: 'Nunito', sans-serif;
+                @extend %flex;
+            }
+            .hero__text--h1{
+                font-size: 7rem;
+                margin-top: nth($medida-generales,3);
+                display: flex;
+            }
+            .hero__text--p{
+                font-size: nth($medida-generales,3);
+            }
+            .hero__boton {
+                width: $m-100;
+                height: 10rem;
+                @extend %flex;
+                input {
+                    @include botones ($color-principal);
+                    &:hover {
+                        @include botones (nth($color-generales,2));
+                    }
+                }
+            }
+        }
+    }
+    .galeria__title {
+        text-align: center;
+        font-size: nth($medida-generales,5);
+        padding: 20px 0px;
+    }
+    .galeria {
+        padding-top: nth($medida-generales,1);
+        padding-bottom: nth($medida-generales,5);
+        padding-left: 150px;
+        padding-right: 150px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 250px;
+        grid-template-areas:
+            "img1 img1 img2"
+            "img3 img4 img4"
+            "img3 img5 img6"
+            "img7 img7 img8"
+            "img9 img9 img9";
+        gap: 0.8em;
+        .galeria__img--img1 {
+            grid-area: img1;
+            .galeria__picture {
+                width: $m-100;
+                height: $m-100;
+                object-fit: cover;
+                border-radius: 5px 10px;
+            }
+        }
+        .galeria__img--img2 {
+            grid-area: img2;
+            .galeria__picture {
+                width: $m-100;
+                height: $m-100;
+                object-fit: cover;
+                border-radius: 5px 10px;
+            }
+        }
+        .galeria__img--img3 {
+            grid-area: img3;
+            .galeria__picture {
+                width: $m-100;
+                height: $m-100;
+                object-fit: cover;
+                border-radius: 5px 10px;
+            }
+        }
+        .galeria__img--img4 {
+            grid-area: img4;
+            .galeria__picture {
+                width: $m-100;
+                height: $m-100;
+                object-fit: cover;
+                border-radius: 5px 10px;
+            }
+        }
+        .galeria__img--img5 {
+            grid-area: img5;
+            .galeria__picture {
+                width: $m-100;
+                height: $m-100;
+                object-fit: cover;
+                border-radius: 5px 10px;
+            }
+        }
+        .galeria__img--img6 {
+            grid-area: img6;
+            .galeria__picture {
+                width: $m-100;
+                height: $m-100;
+                object-fit: cover;
+                border-radius: 5px 10px;
+            }
+        }
+        .galeria__img--img7 {
+            grid-area: img7;
+            .galeria__picture {
+                width: $m-100;
+                height: $m-100;
+                object-fit: cover;
+                border-radius: 5px 10px;
+            }
+        }
+        .galeria__img--img8 {
+            grid-area: img8;
+            .galeria__picture {
+                width: $m-100;
+                height: $m-100;
+                object-fit: cover;
+                border-radius: 5px 10px;
+            }
+        }
+        .galeria__img--img9 {
+            grid-area: img9;
+            .galeria__picture {
+                width: $m-100;
+                height: $m-100;
+                object-fit: cover;
+                border-radius: 5px 10px;
+            }
+        }
+    }
+    .fixed {
+        position: fixed;
+        right: 2%;
+        bottom: 13%;
+        background: rgb(63, 94, 251);
+        background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(44, 201, 107, 1) 100%);
+        font-family: 'Nunito', sans-serif;
+        text-align: center;
+        width: 175px;
+        height: 175px;
+        border-radius: $m-100;
+        box-shadow: 18px 16px 20px -4px rgba(0, 0, 0, 0.56);
+        -webkit-box-shadow: 18px 16px 20px -4px rgba(0, 0, 0, 0.56);
+        -moz-box-shadow: 18px 16px 20px -4px rgba(0, 0, 0, 0.56);
+        div {
+            margin-top: 35px;
+        }
+    }
+}
+

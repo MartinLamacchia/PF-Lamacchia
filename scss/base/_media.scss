@@ -1,0 +1,1097 @@
+/*-----MEDIA QUERY-----*/
+
+@media screen and (max-width:1400px) {
+    main {
+        .clientes {
+            padding-left: 10%;
+        }
+    }
+}
+
+@media screen and (max-width:1300px) {
+    main {
+        .hero {
+            .hero__hero {
+                .hero__text--h1 {
+                    font-size: 5rem;
+                }
+            }
+        }
+    }
+
+
+    main {
+        .clientes {
+            width: 100%;
+            grid-template-columns: repeat(2, 1fr);
+            grid-auto-rows: 400px;
+            grid-template-areas:
+                "coder ae"
+                "arg coca"
+                "velez berthe"
+            ;
+            gap: 1.5rem;
+
+            .clientes__marca {
+                margin: 0px 10px;
+                width: 21.8rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1200px) {
+    main {
+        .galeria {
+            grid-template-columns: repeat(2, 1fr);
+            grid-auto-rows: 200px;
+            grid-template-areas:
+                "img1 img2"
+                "img3 img4"
+                "img5 img6"
+                "img7 img8"
+                "img9 img9";
+        }
+    }
+
+}
+
+@media screen and (max-width:950px) {
+    header {
+        .header__superior {
+            input {
+                display: none;
+            }
+        }
+    }
+
+    main {
+        .hero {
+            .hero__hero {
+                .hero__text--h1 {
+                    font-size: 3rem;
+                }
+
+                .hero__text--p {
+                    font-size: 1rem;
+                }
+
+                .hero__boton input {
+                    font-size: 0.9rem;
+                    padding: 5px 10px;
+                }
+            }
+        }
+    }
+
+    main {
+        .galeria {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+    }
+
+    main {
+        .fixed {
+            display: none;
+        }
+    }
+
+    main {
+        .nosotros {
+            background-image: none;
+            height: 100vh;
+
+            .nosotros__img {
+                display: flex;
+                width: 100%;
+
+                img {
+                    width: 100%;
+                    height: 40vh;
+                }
+            }
+
+            .nosotros__text {
+                width: 80%;
+                padding: 5px;
+                top: 2rem;
+                left: 10%;
+
+                .nosotros__text p {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+    main {
+        .menu__menu {
+            height: 4rem;
+        }
+
+        .productos__conteiner {
+            grid-auto-rows: none;
+            grid-template-rows: 48rem 48rem 37rem 37rem;
+            gap: 5rem;
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+
+            .productos__basico {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                >img {
+                    display: none;
+                }
+
+                .productos__img950 {
+                    display: flex;
+                    justify-content: center;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .productos__menu--lista {
+                    justify-content: center;
+                    align-items: center;
+
+                    h2 {
+                        margin-bottom: 10px;
+                    }
+
+                    h3 {
+                        margin-bottom: 8px;
+                    }
+
+                    ul {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        flex-wrap: wrap;
+
+                        li {
+                            font-size: 0.8rem;
+                            margin: 0px 12px;
+                        }
+                    }
+                }
+            }
+
+            .productos__premium {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                >img {
+                    display: none;
+                }
+
+                .productos__img950 {
+                    display: flex;
+                    justify-content: center;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .productos__menu--lista {
+                    justify-content: center;
+                    align-items: center;
+
+                    h2 {
+                        margin-bottom: 10px;
+                    }
+
+                    h3 {
+                        margin-bottom: 8px;
+                    }
+
+                    ul {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        flex-wrap: wrap;
+
+                        li {
+                            font-size: 0.8rem;
+                            margin: 0px 12px;
+                        }
+                    }
+                }
+            }
+
+            .productos__pizzaParty {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                >img {
+                    display: none;
+                }
+
+                .productos__img950 {
+                    display: flex;
+                    justify-content: center;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .productos--lista {
+                    h2 {
+                        text-align: center;
+                        margin-bottom: 10px;
+                    }
+
+                    h3 {
+                        text-align: center;
+                    }
+
+                    ul {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        flex-wrap: wrap;
+
+                        li {
+                            font-size: 0.8rem;
+                            margin: 0px 12px;
+                        }
+                    }
+                }
+            }
+
+            .productos__viandas {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                >img {
+                    display: none;
+                }
+
+                .productos__img950 {
+                    display: flex;
+                    justify-content: center;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .productos--lista {
+                    h2 {
+                        text-align: center;
+                        margin-bottom: 10px;
+                    }
+
+                    h3 {
+                        text-align: center;
+                    }
+
+                    ul {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        flex-wrap: wrap;
+
+                        li {
+                            font-size: 0.8rem;
+                            margin: 0px 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    main {
+        .clientes {
+            .clientes__marca {
+                width: 16rem;
+            }
+
+            .clientes__marca--coder {
+                img {
+                    width: 14rem;
+                }
+
+                >div {
+                    >h3 {
+                        position: relative;
+                        top: 1.8rem;
+                    }
+
+                    >p {
+                        position: relative;
+                        top: 1.8rem;
+                    }
+
+                    >a {
+                        position: relative;
+                        top: 1.8rem;
+                    }
+                }
+            }
+
+            .clientes__marca--ae {
+                img {
+                    width: 14rem;
+                }
+            }
+
+            .clientes__marca--coca {
+                img {
+                    width: 14rem;
+                }
+            }
+
+            .clientes__marca--arg {
+                img {
+                    width: 14rem;
+                }
+
+                >div {
+                    >h3 {
+                        position: relative;
+                        top: 4.3rem;
+                    }
+
+                    >p {
+                        position: relative;
+                        top: 4.3rem;
+                    }
+
+                    >a {
+                        position: relative;
+                        top: 4.3rem;
+                    }
+                }
+            }
+
+            .clientes__marca--velez {
+                img {
+                    width: 14rem;
+                }
+            }
+
+            .clientes__marca--berthe {
+                img {
+                    width: 14rem;
+                }
+
+                >div {
+                    >h3 {
+                        position: relative;
+                        top: 1.3rem;
+                    }
+
+                    >p {
+                        position: relative;
+                        top: 1.3rem;
+                    }
+
+                    >h4 {
+                        position: relative;
+                        top: 1.3rem;
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        .footer__conteiner {
+            .footer__redes {
+                display: flex;
+                justify-content: space-evenly;
+                flex-direction: column;
+
+                a {
+                    img {
+                        width: 70%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:750px) {
+
+    .grid__conteiner {
+        grid-template-rows: auto auto 150px;
+    }
+
+    header {
+        .header__superior {
+            padding: 0;
+            margin: 0;
+
+            img {
+                display: none;
+            }
+        }
+
+        .container__menu {
+            height: 100%;
+
+            .menu__logo--movil {
+                display: flex;
+                justify-content: center;
+            }
+
+            .menu {
+                justify-content: flex-start;
+
+                label {
+                    display: block;
+
+                    .icon__menu {
+                        display: flex;
+                    }
+                }
+
+                #check__menu:checked {
+                    ~nav {
+                        >ul {
+                            height: 300px;
+                            visibility: visible;
+                            opacity: 1;
+                        }
+                    }
+                }
+
+                >nav {
+                    >ul {
+                        flex-direction: column;
+                        background: rgb(42, 5, 52);
+                        background: linear-gradient(90deg, rgba(42, 5, 52, 1) 0%, rgba(46, 177, 201, 1) 100%, rgba(122, 22, 171, 1) 100%);
+                        position: absolute;
+                        z-index: 100;
+                        left: 0;
+                        top: 70px;
+                        width: $m-100;
+                        height: 0px;
+                        transition: all 300ms ease;
+                        opacity: 0;
+                        visibility: hidden;
+                        align-items: flex-start;
+
+                        >li {
+                            ul {
+                                left: 100px;
+                                width: 150px;
+                            }
+
+                            &:hover {
+                                ul {
+                                    top: -25px;
+
+                                    li {
+                                        a {
+                                            font-size: 15px;
+
+                                            &:hover {
+                                                transform: scale(1);
+                                                font-size: 15px;
+                                                padding-left: 15px;
+                                            }
+                                        }
+                                    }
+
+                                    &::before {
+                                        border-right: 12px solid #ffffff;
+                                        border-top: 12px solid transparent;
+                                        border-bottom: 12px solid transparent;
+                                        top: 30px;
+                                        left: -23px;
+                                    }
+                                }
+                            }
+
+                            >a {
+                                font-size: 15px;
+                                padding: 5px;
+                                display: block;
+                            }
+
+                            &:first-child {
+                                >a {
+                                    background-size: 20px;
+                                    padding: 10px 20px;
+                                    transform: scale(1);
+
+                                    &:hover {
+                                        transform: scale(1);
+                                    }
+
+                                    &#selected {
+                                        background-color: rgba(0, 0, 0, 0);
+                                        transform: scale(1);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    main {
+        .hero {
+            object-fit: cover;
+            background-position: center center;
+            margin-top: 0px;
+
+            .hero__hero {
+                .hero__text--h1 {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+
+    main {
+        .nosotros {
+            .nosotros__text {
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    main {
+        .menu__menu {
+            height: 1.5rem;
+
+            a {
+                font-size: 1rem;
+            }
+        }
+
+        .productos__conteiner {
+            grid-template-rows: 46rem 42rem 32rem 32rem;
+        }
+    }
+
+    main {
+        .clientes__title {
+            h1 {
+                margin-left: 2.5rem;
+            }
+        }
+
+        .clientes {
+            grid-auto-rows: 20rem;
+
+            .clientes__marca {
+                width: 12rem;
+            }
+
+            .clientes__marca--coder {
+                img {
+                    width: 10rem;
+                }
+
+                >div {
+                    >h3 {
+                        top: 1.4rem;
+                        font-size: 0.8rem;
+                    }
+
+                    >p {
+                        top: 1.4rem;
+                        font-size: 0.8rem;
+                    }
+
+                    >a {
+                        top: 1.4rem;
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+
+            .clientes__marca--ae {
+                img {
+                    width: 10rem;
+                }
+
+                >div {
+                    >h3 {
+                        top: 5rem;
+                        font-size: 0.8rem;
+                    }
+
+                    >p {
+                        top: 5rem;
+                        font-size: 0.8rem;
+                    }
+
+                    >a {
+                        top: 5rem;
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+
+            .clientes__marca--coca {
+                img {
+                    width: 10rem;
+                }
+
+                >div {
+                    >h3 {
+                        top: 5rem;
+                        font-size: 0.8rem;
+                    }
+
+                    >p {
+                        top: 5rem;
+                        font-size: 0.8rem;
+                    }
+
+                    >a {
+                        top: 5rem;
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+
+            .clientes__marca--arg {
+                img {
+                    width: 10rem;
+                }
+
+                >div {
+                    >h3 {
+                        top: 3.5rem;
+                        font-size: 0.8rem;
+                    }
+
+                    >p {
+                        top: 3.5rem;
+                        font-size: 0.8rem;
+                    }
+
+                    >a {
+                        top: 3.5rem;
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+
+            .clientes__marca--velez {
+                img {
+                    width: 10rem;
+                }
+
+                >div {
+                    >h3 {
+                        top: 1.4rem;
+                        font-size: 0.8rem;
+                    }
+
+                    >p {
+                        top: 1.4rem;
+                        font-size: 0.8rem;
+                    }
+
+                    >a {
+                        top: 1.4rem;
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+
+            .clientes__marca--berthe {
+                img {
+                    width: 10rem;
+                }
+
+                >div {
+                    >h3 {
+                        top: 1.3rem;
+                        font-size: 0.8rem;
+                    }
+
+                    >p {
+                        top: 1.3rem;
+                        font-size: 0.8rem;
+                    }
+
+                    >h4 {
+                        top: 1.3rem;
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        .footer__conteiner {
+            .footer__contacto {
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:550px) {
+
+    main {
+        .hero {
+            .hero__hero {
+                .hero__text--h1 {
+                    font-size: 2rem;
+                }
+
+                .hero__text--p {
+                    font-size: .8rem;
+                }
+
+                .hero__boton {
+                    input {
+                        font-size: 0.9rem;
+                        padding: 5px 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    main {
+        .galeria__title {
+            font-size: 1.5em;
+            padding: 10px 0px;
+        }
+
+        .galeria {
+            grid-template-columns: repeat(1, 1fr);
+            grid-auto-rows: 150px;
+            grid-template-areas:
+                "img1"
+                "img2"
+                "img3"
+                "img4"
+                "img5"
+                "img6"
+                "img7"
+                "img8"
+                "img9";
+        }
+    }
+
+    main {
+        .nosotros {
+            .nosotros__text {
+                p {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    main {
+        .productos__conteiner {
+            grid-template-rows: 46rem 38rem 28rem 28rem;
+        }
+    }
+
+    main {
+        .clientes__title {
+            h1 {
+                margin-left: 0;
+                font-size: 2.5rem;
+            }
+        }
+
+        .clientes {
+            grid-template-columns: repeat(1, 1fr);
+            grid-auto-rows: 200px;
+            grid-template-areas:
+                "coder"
+                "ae"
+                "arg"
+                "coca"
+                "velez"
+                "berthe"
+            ;
+
+            .clientes__marca {
+                width: 95%;
+            }
+
+            .clientes__marca--coder {
+                flex-direction: row;
+                justify-content: space-around;
+
+                img {
+                    width: 7rem;
+                }
+
+                >div {
+                    flex-direction: column;
+
+                    >h3 {
+                        top: 0;
+                        font-size: 0.5rem;
+                    }
+
+                    >p {
+                        top: 0rem;
+                        font-size: 0.5rem;
+                    }
+
+                    >a {
+                        top: 0rem;
+                        font-size: 0.5rem;
+                    }
+                }
+            }
+
+            .clientes__marca--ae {
+                flex-direction: row;
+                justify-content: space-around;
+
+                img {
+                    width: 7rem;
+                }
+
+                >div {
+                    flex-direction: column;
+
+                    >h3 {
+                        top: 0;
+                        font-size: 0.5rem;
+                    }
+
+                    >p {
+                        top: 0rem;
+                        font-size: 0.5rem;
+                    }
+
+                    >a {
+                        top: 0rem;
+                        font-size: 0.5rem;
+                    }
+                }
+            }
+
+            .clientes__marca--arg {
+                flex-direction: row;
+                justify-content: space-around;
+
+                img {
+                    width: 7rem;
+                }
+
+                >div {
+                    flex-direction: column;
+
+                    >h3 {
+                        top: 0;
+                        font-size: 0.5rem;
+                    }
+
+                    >p {
+                        top: 0rem;
+                        font-size: 0.5rem;
+                    }
+
+                    >a {
+                        top: 0rem;
+                        font-size: 0.5rem;
+                    }
+                }
+            }
+
+            .clientes__marca--coca {
+                flex-direction: row;
+                justify-content: space-around;
+
+                img {
+                    width: 7rem;
+                }
+
+                >div {
+                    flex-direction: column;
+
+                    >h3 {
+                        top: 0;
+                        font-size: 0.5rem;
+                    }
+
+                    >p {
+                        top: 0rem;
+                        font-size: 0.5rem;
+                    }
+
+                    >a {
+                        top: 0rem;
+                        font-size: 0.5rem;
+                    }
+                }
+            }
+
+            .clientes__marca--velez {
+                flex-direction: row;
+                justify-content: space-around;
+
+                img {
+                    width: 7rem;
+                }
+
+                >div {
+                    flex-direction: column;
+
+                    >h3 {
+                        top: 0;
+                        font-size: 0.5rem;
+                    }
+
+                    >p {
+                        top: 0rem;
+                        font-size: 0.5rem;
+                    }
+
+                    >a {
+                        top: 0rem;
+                        font-size: 0.5rem;
+                    }
+                }
+            }
+
+            .clientes__marca--berthe {
+                flex-direction: row;
+                justify-content: space-around;
+
+                img {
+                    width: 7rem;
+                }
+
+                >div {
+                    flex-direction: column;
+
+                    >h3 {
+                        top: 0;
+                        font-size: 0.5rem;
+                    }
+
+                    >p {
+                        top: 0rem;
+                        font-size: 0.5rem;
+                    }
+
+                    >h4 {
+                        top: 0rem;
+                        font-size: 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        .footer__conteiner {
+            .footer__logo {
+                img {
+                    width: 70px;
+                    height: 70px;
+                }
+            }
+
+            .footer__contacto {
+                font-size: 13px;
+            }
+
+            .footer__redes {
+                a {
+                    img {
+                        width: 50%;
+                    }
+                }
+            }
+        }
+
+        .footer__gitml {
+            font-size: 9px;
+
+            &:hover {
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:450px) {
+    main {
+        .nosotros {
+            .nosotros__text {
+                p {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+
+    main {
+        .menu__menu {
+            height: 1rem;
+
+            a {
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:400px) {
+
+    footer {
+        .footer__conteiner {
+            flex-direction: column;
+
+            .footer__redes {
+                flex-direction: row;
+                margin-left: 40px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:370px) {
+
+    main {
+        .hero {
+            .hero__hero {
+                .hero__text--h1 {
+                    font-size: 1.3rem;
+                }
+
+                .hero__text--p {
+                    font-size: .5rem;
+                }
+
+                .hero__boton {
+                    input {
+                        font-size: 0.7rem;
+                        padding: 3px 7px;
+                    }
+                }
+            }
+        }
+    }
+}

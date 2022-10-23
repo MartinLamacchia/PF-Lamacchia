@@ -1,0 +1,25 @@
+{
+  "name": "preentrega1-martin-lamacchia",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">Hola 👋, Yo soy Martin Lamacchia</h1> <h3 align=\"center\">Mi primera pagina creada en el curso de CODER</h3>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilos.scss css/estilos.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MartinLamacchia/PreEntrega2-Lamacchia.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MartinLamacchia/PreEntrega2-Lamacchia/issues"
+  },
+  "homepage": "https://github.com/MartinLamacchia/PreEntrega2-Lamacchia#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.3",
+    "nodemon": "^2.0.20"
+  }
+}

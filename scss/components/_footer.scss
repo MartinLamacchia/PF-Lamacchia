@@ -1,0 +1,67 @@
+/* FOOTER */
+
+footer {
+    grid-area: footer;
+    width: $m-100;
+    background-color: nth($color-generales,2);
+
+    .footer__conteiner {
+        @include flex (space-around,center);
+
+        .footer__logo {
+            img {
+                width: $m-100;
+            }
+        }
+
+        .footer__contacto {
+            font-size: 25px;
+            font-family: 'Nunito', sans-serif;
+            color: $color-secundario;
+            @extend %flex;
+            flex-direction: column;
+        }
+
+        .footer__redes {
+            @include flex (space-evenly,center);
+            z-index: 10;
+
+            a {
+                img {
+                    width: $m-100 - 10%;
+                    padding-left: 5px;
+                }
+            }
+        }
+    }
+
+    .footer__gitml {
+        @extend %flex;
+        font-size: 13px;
+
+        p {
+            text-decoration: none;
+            font-family: 'Nunito', sans-serif;
+            color: nth($color-generales,1);
+        }
+
+        a {
+            text-decoration: none;
+            font-family: 'Nunito', sans-serif;
+            color: nth($color-generales,1);
+        }
+    }
+    .footer__gitml:hover {
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        a{
+            text-decoration: underline;
+            color: $color-secundario;
+        }
+        p {
+            text-decoration: underline;
+            color: $color-secundario;
+        }
+    }
+}

@@ -1,0 +1,173 @@
+/*-----PRODUCTOS-----*/
+
+main {
+    #menu__menu {
+        text-align: center;
+        font-size: nth($medida-generales,5);
+        padding-top: nth($medida-generales,3);
+        padding-bottom: nth($medida-generales,1);
+    }
+
+    .menu__menu {
+        width: $m-100;
+        height: 7rem;
+        @include flex (space-evenly, center);
+
+        a {
+            text-decoration: none;
+            font-size: nth($medida-generales,2);
+            font-weight: bold;
+            color: $color-principal;
+            transition: all 300ms ease;
+
+            &:hover {
+                transform: scale(1.1);
+                background-color: $color-principal;
+                border-radius: 1.3rem;
+                color: nth($color-generales,2);
+                padding: 10px;
+            }
+        }
+    }
+
+    .productos__conteiner {
+        width: $m-100;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: 45rem;
+        grid-template-areas:
+            "basico"
+            "premium"
+            "pizza"
+            "viandas"
+        ;
+        gap: 15rem;
+        justify-items: center;
+
+        .productos__basico {
+            width: $m-100 - 20%;
+            grid-area: basico;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            margin: 1rem 0;
+
+            .productos__menu--lista {
+                @extend %flex-dir;
+                justify-content: space-around;
+            }
+
+            img {
+                width: $m-100 - 50%;
+                border-radius: 0.7rem;
+                box-shadow: 7px 6px 12px 2px rgba(0, 0, 0, 0.55);
+                -webkit-box-shadow: 7px 6px 12px 2px rgba(0, 0, 0, 0.55);
+                -moz-box-shadow: 7px 6px 12px 2px rgba(0, 0, 0, 0.55);
+            }
+
+            .productos__img950 {
+                display: none;
+            }
+        }
+
+        .productos__premium {
+            width: $m-100 - 20%;
+            grid-area: premium;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .productos__menu--lista {
+                @extend %flex-dir;
+                justify-content: space-around;
+            }
+
+            img {
+                width: $m-100 - 50%;
+                border-radius: 0.7rem;
+                box-shadow: 7px 6px 12px 2px rgba(0, 0, 0, 0.55);
+                -webkit-box-shadow: 7px 6px 12px 2px rgba(0, 0, 0, 0.55);
+                -moz-box-shadow: 7px 6px 12px 2px rgba(0, 0, 0, 0.55);
+            }
+
+            .productos__img950 {
+                display: none;
+            }
+        }
+
+        .productos__pizzaParty {
+            width: $m-100 - 20%;
+            grid-area: pizza;
+            @include flex (space-between, center);
+            flex-direction: row;
+
+            img {
+                width: $m-100 - 50%;
+                border-radius: 0.7rem;
+                box-shadow: 7px 6px 12px 2px rgba(0, 0, 0, 0.55);
+                -webkit-box-shadow: 7px 6px 12px 2px rgba(0, 0, 0, 0.55);
+                -moz-box-shadow: 7px 6px 12px 2px rgba(0, 0, 0, 0.55);
+            }
+
+            div {
+                ul {
+                    li {
+                        padding-top: 20px;
+                    }
+                }
+            }
+
+            .productos__img950 {
+                display: none;
+            }
+        }
+
+        .productos__viandas {
+            width: $m-100;
+            grid-area: viandas;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            img {
+                width: $m-100 - 50%;
+                height: $m-100 - 20%;
+                border-radius: 0.7rem;
+                box-shadow: 7px 6px 12px 2px rgba(0, 0, 0, 0.55);
+                -webkit-box-shadow: 7px 6px 12px 2px rgba(0, 0, 0, 0.55);
+                -moz-box-shadow: 7px 6px 12px 2px rgba(0, 0, 0, 0.55);
+                margin-left: 5%;
+            }
+            div{
+                margin-right: 5%;
+                ul{
+                    li{
+                        padding-top: 10px;
+                    }
+                }
+            }
+            >div{
+                >h3{
+                    padding-top: 10px;
+                }
+            }
+            .productos__img950 {
+                display: none;
+            }
+        }
+    }
+    .productos__volver{
+        width: $m-100;
+        height: 10rem;
+        @extend %flex;
+        input {
+            @include botones ($color-principal);
+            &:hover {
+                @include botones (nth($color-generales,2));
+            }
+        }
+    }
+}

@@ -1,0 +1,61 @@
+
+// COLORES
+
+$color-principal:rgb(203, 151, 54);
+$color-secundario:rgb(48, 66, 147);
+
+$color-generales:
+black,
+white;
+
+// MEDIDAS
+
+$m-100: 100%;
+
+$medida-generales:
+1rem,
+1.5rem,
+2rem,
+2.5rem,
+3rem;
+
+// EXTENDS
+
+%flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%flex-dir{
+    display: flex;
+    flex-direction: column;
+}
+
+// MIXIN
+
+@mixin flex ($justify, $align){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;    
+}
+
+// CONDICIONALES
+
+@mixin botones ($btn-hover) {
+    @if $btn-hover ==  $color-principal{
+        font-size: 1.2rem;
+        font-weight: bold;
+        padding: 10px 20px;
+        border-radius: 20px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        color: #ffffff;
+        background-color: rgb(203, 151, 54);
+    }@else{
+        background-color: rgb(255, 255, 255);
+        color: rgb(203, 151, 54);
+        transform: scale(1.06);
+    }    
+}
+

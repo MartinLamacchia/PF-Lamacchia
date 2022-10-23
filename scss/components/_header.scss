@@ -1,0 +1,182 @@
+@import "../base/variables";
+
+/*-----HEADER-----*/
+
+header {
+    width: $m-100;
+    background-color: nth($color-generales, 2);
+    grid-area: header;
+
+    .header__superior {
+        margin: auto;
+        @include flex (space-around, center);
+        padding: 10px;
+
+        img {
+            width: 90px;
+        }
+
+        input {
+            width: 250px;
+            padding: 10px;
+        }
+    }
+
+    .container__menu {
+        width: $m-100;
+        height: 50px;
+        background: rgb(42, 5, 52);
+        background: linear-gradient(90deg, rgba(42, 5, 52, 1) 0%, rgba(46, 177, 201, 1) 100%, rgba(122, 22, 171, 1) 100%);
+        padding: 0px 20px;
+        display: flex;
+
+        .menu__logo--movil {
+            display: none;
+
+            img {
+                width: 70px;
+                height: 70px;
+                position: absolute;
+                right: nth($medida-generales, 1);
+            }
+        }
+
+        .menu {
+            width: $m-100;
+            height: $m-100;
+            @extend %flex;
+
+            #check__menu{
+                display: none;
+            }
+
+            label{
+                width: 26px;
+                height: 70px;
+                display: none;
+                .icon__menu{
+                    font-size: 26px;
+                    color: nth($color-generales,2);
+                    cursor: pointer;
+                    width: 26px;
+                    height: $m-100;
+                    display: none;
+                    align-items: center;
+                }
+            }
+
+            >nav {
+                height: $m-100;
+
+                >ul {
+                    height: $m-100;
+                    @include flex (flex-start, center);
+
+                    >li {
+                        height: $m-100;
+                        list-style: none;
+                        position: relative;
+                        margin: 0px 8px;
+
+                        ul {
+                            width: 200px;
+                            display: flex;
+                            flex-direction: column;
+                            background-color: nth($color-generales,2);
+                            list-style: none;
+                            position: absolute;
+                            top: 70px;
+                            left: -15px;
+                            padding: 14px 0px;
+                            visibility: hidden;
+                            opacity: 0;
+                            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+                            border-radius: 20px;
+                            z-index: 10;
+                        }
+
+                        &:hover {
+                            ul {
+                                visibility: visible;
+                                opacity: 1;
+                                top: 50px;
+                                z-index: 10;
+
+                                li {
+                                    a{
+                                        display: block;
+                                        color: $color-secundario;
+                                        padding: 8px;
+                                        font-size: 18px;
+                                        font-family: 'Nunito', sans-serif;
+                                        text-decoration: none;
+                                        padding-left: 14px;
+                                        margin-top: 10px;
+                                        transition: 300ms ease;
+
+                                        &:hover {
+                                            background-color: $color-secundario;
+                                            color: nth($color-generales,2);
+                                            transform: scale(1.1);
+                                            padding-left: 30px;
+                                            font-size: 18px;
+                                            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+                                        }
+                                    }
+                                }
+
+                                &::before {
+                                    content: "";
+                                    width: 0px;
+                                    height: 0px;
+                                    border-left: 12px solid transparent;
+                                    border-right: 12px solid transparent;
+                                    border-bottom: 12px solid nth($color-generales,2);
+                                    position: absolute;
+                                    top: -12px;
+                                    left: 40px;
+
+                                }
+                            }
+                        }
+
+                        &:first-child {
+                            >a {
+                                background-image: url(../img/logo-home.png);
+                                background-size: 30px;
+                                background-repeat: no-repeat;
+                                background-position: center center;
+                                &#selected {
+                                    transform: scale(1.2);
+                                    background-color: $color-principal;
+                                }
+                            }
+                        }
+
+                        >a {
+                            width: $m-100;
+                            height: $m-100;
+                            color: nth($color-generales, 2);
+                            font-size: 20px;
+                            font-family: 'Nunito', sans-serif;
+                            text-decoration: none;
+                            @extend %flex;
+                            padding: 25px;
+                            transition: all 300ms ease;
+
+                            &:hover {
+                                transform: scale(1.1);
+                                color: $color-principal;
+                            }
+
+                            &#selected {
+                                transform: scale(1.2);
+                                color: $color-principal;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
