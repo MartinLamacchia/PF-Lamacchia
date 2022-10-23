@@ -408,6 +408,18 @@
         }
     }
 
+    main{
+        .contacto{
+            img{
+                display: none;
+            }
+            .contacto__form{
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+    }
+
     footer {
         .footer__conteiner {
             .footer__redes {
@@ -739,6 +751,14 @@
         }
     }
 
+    main{
+        .contacto{
+            .contacto__form{
+                font-size: 0.8rem;
+            }
+        }
+    }
+
     footer {
         .footer__conteiner {
             .footer__contacto {
@@ -1053,6 +1073,14 @@
 
             a {
                 font-size: 0.8rem;
+            }
+        }
+    }
+
+    main{
+        .contacto{
+            .contacto__form{
+                font-size: 0.5rem;
             }
         }
     }

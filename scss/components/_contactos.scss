@@ -40,8 +40,8 @@ main {
                             color: nth($color-generales,1);
                             cursor: pointer;
                             position: absolute;
-                            top: 0px;
-                            left: 80px;
+                            top: 0%;
+                            left: 9.2%;
                             transform: translateY(10px);
                             transition: 0.5s, color 0.3s;
                         }
@@ -50,8 +50,8 @@ main {
                             color: nth($color-generales,1);
                             cursor: pointer;
                             position: absolute;
-                            top: 0px;
-                            left: 415px;
+                            top: 0%;
+                            left: 51%;
                             transform: translateY(10px);
                             transition: 0.5s, color 0.3s;
                         }
@@ -84,7 +84,7 @@ main {
                             cursor: pointer;
                             position: absolute;
                             top: 58px;
-                            left: 80px;
+                            left: 9.2%;
                             transform: translateY(10px);
                             transition: 0.5s, color 0.3s;
                         }
@@ -94,7 +94,7 @@ main {
                             cursor: pointer;
                             position: absolute;
                             top: 58px;
-                            left: 415px;
+                            left: 51%;
                             transform: translateY(10px);
                             transition: 0.5s, color 0.3s;
                         }
@@ -136,6 +136,7 @@ main {
                         }
 
                         .contacto__form--3-2 {
+                            margin-bottom: 2rem;
                             display: flex;
                             flex-wrap: wrap;
 
@@ -146,55 +147,55 @@ main {
                     }
 
                     .contacto__form--4 {
-                            .form__label{
+                        margin: 1rem;
+                            .form__label-1{
                                 margin-left: 0.5rem;
-                                margin-bottom: 3rem;
                                 color: nth($color-generales,1);
                                 cursor: pointer;
                                 position: absolute;
-                                top: 190px;
-                                left: 118px;
+                                top: 210px;
+                                left: 10.8%;
+                                transform: translateY(10px);
+                                transition: 0.5s, color 0.3s;
+                            }
+                            .form__label-2{
+                                margin-left: 0.5rem;
+                                color: nth($color-generales,1);
+                                cursor: pointer;
+                                position: absolute;
+                                top: 210px;
+                                left: 51%;
                                 transform: translateY(10px);
                                 transition: 0.5s, color 0.3s;
                             }
                             .form__input{
-                                width: 30%;
+                                width: 40%;
                                 background: none;
                                 color: nth($color-generales,1);
                                 font-size: 1rem;
                                 padding: 0.6rem 0.3rem;
-                                margin-left: 5rem;
-                                margin-bottom: 1rem;
+                                margin-left: 0.6rem;
                                 border: none;
                                 outline: none;
                                 border-bottom: 1px solid $color-secundario;
                                 }
-                            .form__input:focus + .form__label, .form__input:not(:placeholder-shown) + .form__label{
+                            .form__input:focus + .form__label-1, .form__input:not(:placeholder-shown) + .form__label-1{
                                 transform: translateY(-12px) scale(.7);
                                 transform-origin: left top;
                                 color: $color-secundario;
                             }
-                            .form__line{
-                                margin-left: 10rem;
+                            .form__input:focus + .form__label-2, .form__input:not(:placeholder-shown) + .form__label-2{
+                                transform: translateY(-12px) scale(.7);
+                                transform-origin: left top;
+                                color: $color-secundario;
                             }
-                        // >div {
-                        //     width: 100%;
-                        //     display: flex;
-                        //     flex-direction: row;
-                        //     justify-content: center;
-                        //     margin: 1rem;
-                        //     flex-wrap: wrap;
 
-                        //     >label {
-                        //         margin-left: 1rem;
-                        //         font-weight: bold;
-                        //     }
-                        // }
-
+                        
                         .contacto__form--4-1 {
                             display: flex;
                             flex-wrap: wrap;
                             justify-content: center;
+                            margin-top: 1rem;
 
                             div {
                                 margin-left: 0.5rem;
@@ -207,7 +208,10 @@ main {
                         flex-direction: column;
 
                         textarea {
+                            width: 100%;
+                            height: 6rem;
                             resize: none;
+                            margin-bottom: 1rem;
                         }
                     }
 
