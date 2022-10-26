@@ -1,3 +1,4 @@
+@import "../base/variables";
 
 /*-----PAGE CLIENTES-----*/
 
@@ -26,7 +27,7 @@ main{
         justify-items: center;
         .clientes__marca{
             margin: 0px 20px;
-            border: 2px solid black;
+            border: 2px solid nth($color-generales,1);
             border-radius: 12%;
             box-shadow: 7px 6px 12px 2px rgba(0,0,0,0.55);
             -webkit-box-shadow: 7px 6px 12px 2px rgba(0,0,0,0.55);

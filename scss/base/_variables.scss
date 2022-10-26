@@ -32,6 +32,11 @@ $medida-generales:
     flex-direction: column;
 }
 
+%flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
 // MIXIN
 
 @mixin flex ($justify, $align){

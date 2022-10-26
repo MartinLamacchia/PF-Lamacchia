@@ -3,7 +3,7 @@
     background: linear-gradient(90deg, rgba(42, 5, 52, 1) 0%, rgba(46, 177, 201, 1) 100%, rgba(122, 22, 171, 1) 100%);
 
     .tpn__logo {
-        width: 100%;
+        width: $m-100;
         display: flex;
         justify-content: center;
         background: rgb(42, 5, 52);
@@ -17,7 +17,7 @@
 
 .g-3 {
     label {
-        color: #ffffff;
+        color: nth($color-generales,2);
     }
 
     div {

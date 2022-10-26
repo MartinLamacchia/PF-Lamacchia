@@ -1,3 +1,5 @@
+@import "../base/variables";
+
 /*-----PRODUCTOS-----*/
 
 main {
@@ -49,10 +51,9 @@ main {
         .productos__basico {
             width: $m-100 - 20%;
             grid-area: basico;
-            display: flex;
+            @extend %flex-row;
             justify-content: space-between;
-            flex-direction: row;
-            margin: 1rem 0;
+            margin: nth($medida-generales,1) 0;
 
             .productos__menu--lista {
                 @extend %flex-dir;
@@ -75,8 +76,7 @@ main {
         .productos__premium {
             width: $m-100 - 20%;
             grid-area: premium;
-            display: flex;
-            flex-direction: row;
+            @extend %flex-row;
             justify-content: space-between;
 
             .productos__menu--lista {
@@ -127,10 +127,8 @@ main {
         .productos__viandas {
             width: $m-100;
             grid-area: viandas;
-            display: flex;
+            @include flex (space-between,center);
             flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
 
             img {
                 width: $m-100 - 50%;

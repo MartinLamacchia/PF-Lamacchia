@@ -1,3 +1,5 @@
+@import "./variables";
+
 /*-----MEDIA QUERY-----*/
 
 @media screen and (max-width:1400px) {
@@ -22,7 +24,7 @@
 
     main {
         .clientes {
-            width: 100%;
+            width: $m-100;
             grid-template-columns: repeat(2, 1fr);
             grid-auto-rows: 400px;
             grid-template-areas:
@@ -104,10 +106,10 @@
 
             .nosotros__img {
                 display: flex;
-                width: 100%;
+                width: $m-100;
 
                 img {
-                    width: 100%;
+                    width: $m-100;
                     height: 40vh;
                 }
             }
@@ -115,7 +117,7 @@
             .nosotros__text {
                 width: 80%;
                 padding: 5px;
-                top: 2rem;
+                top: nth($medida-generales, 3);
                 left: 10%;
 
                 .nosotros__text p {
@@ -134,8 +136,8 @@
             grid-auto-rows: none;
             grid-template-rows: 48rem 48rem 37rem 37rem;
             gap: 5rem;
-            margin-top: 1.5rem;
-            margin-bottom: 1.5rem;
+            margin-top: nth($medida-generales,2);
+            margin-bottom: nth($medida-generales,2);
 
             .productos__basico {
                 flex-direction: column;
@@ -414,8 +416,8 @@
                 display: none;
             }
             .contacto__form{
-                width: 100%;
-                max-width: 100%;
+                width: $m-100;
+                max-width: $m-100;
             }
         }
     }

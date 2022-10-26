@@ -4,9 +4,13 @@ header .container__menu .menu, header .container__menu .menu > nav > ul > li > a
   justify-content: center;
   align-items: center; }
 
-main .nosotros, main .nosotros .nosotros__text, main .productos__conteiner .productos__basico .productos__menu--lista, main .productos__conteiner .productos__premium .productos__menu--lista {
+main .nosotros, main .nosotros .nosotros__text, main .productos__conteiner .productos__basico .productos__menu--lista, main .productos__conteiner .productos__premium .productos__menu--lista, main .contacto .contacto__form .contacto__form--form .contacto__form--group .contacto__form--5 {
   display: flex;
   flex-direction: column; }
+
+main .productos__conteiner .productos__basico, main .productos__conteiner .productos__premium, main .contacto, main .contacto .contacto__form .contacto__form--form .contacto__form--group .contacto__form--3 > div {
+  display: flex;
+  flex-direction: row; }
 
 * {
   margin: 0;
@@ -27,9 +31,13 @@ header .container__menu .menu, header .container__menu .menu > nav > ul > li > a
   justify-content: center;
   align-items: center; }
 
-main .nosotros, main .nosotros .nosotros__text, main .productos__conteiner .productos__basico .productos__menu--lista, main .productos__conteiner .productos__premium .productos__menu--lista {
+main .nosotros, main .nosotros .nosotros__text, main .productos__conteiner .productos__basico .productos__menu--lista, main .productos__conteiner .productos__premium .productos__menu--lista, main .contacto .contacto__form .contacto__form--form .contacto__form--group .contacto__form--5 {
   display: flex;
   flex-direction: column; }
+
+main .productos__conteiner .productos__basico, main .productos__conteiner .productos__premium, main .contacto, main .contacto .contacto__form .contacto__form--form .contacto__form--group .contacto__form--3 > div {
+  display: flex;
+  flex-direction: row; }
 
 /*-----HEADER-----*/
 header {
@@ -160,6 +168,19 @@ header {
               header .container__menu .menu > nav > ul > li > a#selected {
                 transform: scale(1.2);
                 color: #cb9736; }
+
+header .container__menu .menu, header .container__menu .menu > nav > ul > li > a, main .hero .hero__hero, main .hero .hero__hero .hero__text, main .hero .hero__hero .hero__boton, main .productos__volver, main .clientes__title, main .clientes .clientes__marca--coder, main .clientes .clientes__marca--ae, main .clientes .clientes__marca--coca, main .clientes .clientes__marca--arg, main .clientes .clientes__marca--velez, main .clientes .clientes__marca--berthe, .g-3 div .btn-dir, footer .footer__conteiner .footer__contacto, footer .footer__gitml {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+main .nosotros, main .nosotros .nosotros__text, main .productos__conteiner .productos__basico .productos__menu--lista, main .productos__conteiner .productos__premium .productos__menu--lista, main .contacto .contacto__form .contacto__form--form .contacto__form--group .contacto__form--5 {
+  display: flex;
+  flex-direction: column; }
+
+main .productos__conteiner .productos__basico, main .productos__conteiner .productos__premium, main .contacto, main .contacto .contacto__form .contacto__form--form .contacto__form--group .contacto__form--3 > div {
+  display: flex;
+  flex-direction: row; }
 
 /* MAIN */
 main {
@@ -296,6 +317,19 @@ main {
     main .fixed div {
       margin-top: 35px; }
 
+header .container__menu .menu, header .container__menu .menu > nav > ul > li > a, main .hero .hero__hero, main .hero .hero__hero .hero__text, main .hero .hero__hero .hero__boton, main .productos__volver, main .clientes__title, main .clientes .clientes__marca--coder, main .clientes .clientes__marca--ae, main .clientes .clientes__marca--coca, main .clientes .clientes__marca--arg, main .clientes .clientes__marca--velez, main .clientes .clientes__marca--berthe, .g-3 div .btn-dir, footer .footer__conteiner .footer__contacto, footer .footer__gitml {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+main .nosotros, main .nosotros .nosotros__text, main .productos__conteiner .productos__basico .productos__menu--lista, main .productos__conteiner .productos__premium .productos__menu--lista, main .contacto .contacto__form .contacto__form--form .contacto__form--group .contacto__form--5 {
+  display: flex;
+  flex-direction: column; }
+
+main .productos__conteiner .productos__basico, main .productos__conteiner .productos__premium, main .contacto, main .contacto .contacto__form .contacto__form--form .contacto__form--group .contacto__form--3 > div {
+  display: flex;
+  flex-direction: row; }
+
 /*----NOSOTROS------*/
 main .nosotros {
   width: 100%;
@@ -312,6 +346,19 @@ main .nosotros {
     left: 35%; }
     main .nosotros .nosotros__text p {
       font-size: 17px; }
+
+header .container__menu .menu, header .container__menu .menu > nav > ul > li > a, main .hero .hero__hero, main .hero .hero__hero .hero__text, main .hero .hero__hero .hero__boton, main .productos__volver, main .clientes__title, main .clientes .clientes__marca--coder, main .clientes .clientes__marca--ae, main .clientes .clientes__marca--coca, main .clientes .clientes__marca--arg, main .clientes .clientes__marca--velez, main .clientes .clientes__marca--berthe, .g-3 div .btn-dir, footer .footer__conteiner .footer__contacto, footer .footer__gitml {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+main .nosotros, main .nosotros .nosotros__text, main .productos__conteiner .productos__basico .productos__menu--lista, main .productos__conteiner .productos__premium .productos__menu--lista, main .contacto .contacto__form .contacto__form--form .contacto__form--group .contacto__form--5 {
+  display: flex;
+  flex-direction: column; }
+
+main .productos__conteiner .productos__basico, main .productos__conteiner .productos__premium, main .contacto, main .contacto .contacto__form .contacto__form--form .contacto__form--group .contacto__form--3 > div {
+  display: flex;
+  flex-direction: row; }
 
 /*-----PRODUCTOS-----*/
 main #menu__menu {
@@ -352,9 +399,7 @@ main .productos__conteiner {
   main .productos__conteiner .productos__basico {
     width: 80%;
     grid-area: basico;
-    display: flex;
     justify-content: space-between;
-    flex-direction: row;
     margin: 1rem 0; }
     main .productos__conteiner .productos__basico .productos__menu--lista {
       justify-content: space-around; }
@@ -369,8 +414,6 @@ main .productos__conteiner {
   main .productos__conteiner .productos__premium {
     width: 80%;
     grid-area: premium;
-    display: flex;
-    flex-direction: row;
     justify-content: space-between; }
     main .productos__conteiner .productos__premium .productos__menu--lista {
       justify-content: space-around; }
@@ -403,9 +446,9 @@ main .productos__conteiner {
     width: 100%;
     grid-area: viandas;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    flex-direction: row; }
     main .productos__conteiner .productos__viandas img {
       width: 50%;
       height: 80%;
@@ -439,6 +482,19 @@ main .productos__volver {
       background-color: white;
       color: #cb9736;
       transform: scale(1.06); }
+
+header .container__menu .menu, header .container__menu .menu > nav > ul > li > a, main .hero .hero__hero, main .hero .hero__hero .hero__text, main .hero .hero__hero .hero__boton, main .productos__volver, main .clientes__title, main .clientes .clientes__marca--coder, main .clientes .clientes__marca--ae, main .clientes .clientes__marca--coca, main .clientes .clientes__marca--arg, main .clientes .clientes__marca--velez, main .clientes .clientes__marca--berthe, .g-3 div .btn-dir, footer .footer__conteiner .footer__contacto, footer .footer__gitml {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+main .nosotros, main .nosotros .nosotros__text, main .productos__conteiner .productos__basico .productos__menu--lista, main .productos__conteiner .productos__premium .productos__menu--lista, main .contacto .contacto__form .contacto__form--form .contacto__form--group .contacto__form--5 {
+  display: flex;
+  flex-direction: column; }
+
+main .productos__conteiner .productos__basico, main .productos__conteiner .productos__premium, main .contacto, main .contacto .contacto__form .contacto__form--form .contacto__form--group .contacto__form--3 > div {
+  display: flex;
+  flex-direction: row; }
 
 /*-----PAGE CLIENTES-----*/
 main .clientes__title h1 {
@@ -605,11 +661,22 @@ main .clientes {
           background-color: #304293;
           color: white; }
 
-/*----PAGE CONTACTO------*/
-main .contacto {
-  width: 100%;
+header .container__menu .menu, header .container__menu .menu > nav > ul > li > a, main .hero .hero__hero, main .hero .hero__hero .hero__text, main .hero .hero__hero .hero__boton, main .productos__volver, main .clientes__title, main .clientes .clientes__marca--coder, main .clientes .clientes__marca--ae, main .clientes .clientes__marca--coca, main .clientes .clientes__marca--arg, main .clientes .clientes__marca--velez, main .clientes .clientes__marca--berthe, .g-3 div .btn-dir, footer .footer__conteiner .footer__contacto, footer .footer__gitml {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+main .nosotros, main .nosotros .nosotros__text, main .productos__conteiner .productos__basico .productos__menu--lista, main .productos__conteiner .productos__premium .productos__menu--lista, main .contacto .contacto__form .contacto__form--form .contacto__form--group .contacto__form--5 {
+  display: flex;
+  flex-direction: column; }
+
+main .productos__conteiner .productos__basico, main .productos__conteiner .productos__premium, main .contacto, main .contacto .contacto__form .contacto__form--form .contacto__form--group .contacto__form--3 > div {
   display: flex;
   flex-direction: row; }
+
+/*----PAGE CONTACTO------*/
+main .contacto {
+  width: 100%; }
   main .contacto img {
     width: 30%;
     margin-bottom: 2rem; }
@@ -619,7 +686,7 @@ main .contacto {
     margin: auto;
     padding: 2.5rem 3rem;
     text-align: center; }
-    main .contacto .contacto__form .contacto__title h2 {
+    main .contacto .contacto__form .contacto__title h1 {
       font-family: 'Nunito', sans-serif;
       font-size: 30px;
       text-align: center; }
@@ -704,8 +771,6 @@ main .contacto {
           color: #304293; }
         main .contacto .contacto__form .contacto__form--form .contacto__form--group .contacto__form--3 > div {
           width: 100%;
-          display: flex;
-          flex-direction: row;
           justify-content: center;
           margin: 1rem; }
           main .contacto .contacto__form .contacto__form--form .contacto__form--group .contacto__form--3 > div > label {
@@ -762,14 +827,11 @@ main .contacto {
             margin-top: 1rem; }
             main .contacto .contacto__form .contacto__form--form .contacto__form--group .contacto__form--4 .contacto__form--4-1 div {
               margin-left: 0.5rem; }
-        main .contacto .contacto__form .contacto__form--form .contacto__form--group .contacto__form--5 {
-          display: flex;
-          flex-direction: column; }
-          main .contacto .contacto__form .contacto__form--form .contacto__form--group .contacto__form--5 textarea {
-            width: 100%;
-            height: 6rem;
-            resize: none;
-            margin-bottom: 1rem; }
+        main .contacto .contacto__form .contacto__form--form .contacto__form--group .contacto__form--5 textarea {
+          width: 100%;
+          height: 6rem;
+          resize: none;
+          margin-bottom: 1rem; }
         main .contacto .contacto__form .contacto__form--form .contacto__form--group .contacto__boton input {
           font-size: 1.2rem;
           font-weight: bold;
@@ -797,7 +859,7 @@ main .contacto {
       width: 16rem; }
 
 .g-3 label {
-  color: #ffffff; }
+  color: white; }
 
 .g-3 div .btn-dir .btn-color {
   font-size: 1.2rem;
@@ -812,6 +874,19 @@ main .contacto {
     background-color: white;
     color: #cb9736;
     transform: scale(1.06); }
+
+header .container__menu .menu, header .container__menu .menu > nav > ul > li > a, main .hero .hero__hero, main .hero .hero__hero .hero__text, main .hero .hero__hero .hero__boton, main .productos__volver, main .clientes__title, main .clientes .clientes__marca--coder, main .clientes .clientes__marca--ae, main .clientes .clientes__marca--coca, main .clientes .clientes__marca--arg, main .clientes .clientes__marca--velez, main .clientes .clientes__marca--berthe, .g-3 div .btn-dir, footer .footer__conteiner .footer__contacto, footer .footer__gitml {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+main .nosotros, main .nosotros .nosotros__text, main .productos__conteiner .productos__basico .productos__menu--lista, main .productos__conteiner .productos__premium .productos__menu--lista, main .contacto .contacto__form .contacto__form--form .contacto__form--group .contacto__form--5 {
+  display: flex;
+  flex-direction: column; }
+
+main .productos__conteiner .productos__basico, main .productos__conteiner .productos__premium, main .contacto, main .contacto .contacto__form .contacto__form--form .contacto__form--group .contacto__form--3 > div {
+  display: flex;
+  flex-direction: row; }
 
 /* FOOTER */
 footer {
@@ -857,6 +932,19 @@ footer {
     footer .footer__gitml:hover p {
       text-decoration: underline;
       color: #304293; }
+
+header .container__menu .menu, header .container__menu .menu > nav > ul > li > a, main .hero .hero__hero, main .hero .hero__hero .hero__text, main .hero .hero__hero .hero__boton, main .productos__volver, main .clientes__title, main .clientes .clientes__marca--coder, main .clientes .clientes__marca--ae, main .clientes .clientes__marca--coca, main .clientes .clientes__marca--arg, main .clientes .clientes__marca--velez, main .clientes .clientes__marca--berthe, .g-3 div .btn-dir, footer .footer__conteiner .footer__contacto, footer .footer__gitml {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+main .nosotros, main .nosotros .nosotros__text, main .productos__conteiner .productos__basico .productos__menu--lista, main .productos__conteiner .productos__premium .productos__menu--lista, main .contacto .contacto__form .contacto__form--form .contacto__form--group .contacto__form--5 {
+  display: flex;
+  flex-direction: column; }
+
+main .productos__conteiner .productos__basico, main .productos__conteiner .productos__premium, main .contacto, main .contacto .contacto__form .contacto__form--form .contacto__form--group .contacto__form--3 > div {
+  display: flex;
+  flex-direction: row; }
 
 /*-----MEDIA QUERY-----*/
 @media screen and (max-width: 1400px) {

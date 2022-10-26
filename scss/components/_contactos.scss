@@ -1,25 +1,26 @@
+@import "../base/variables";
+
 /*----PAGE CONTACTO------*/
 
 main {
     .contacto {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
+        width: $m-100;
+        @extend %flex-row;
 
         img {
             width: 30%;
-            margin-bottom: 2rem;
+            margin-bottom: nth($medida-generales,3);
         }
 
         .contacto__form {
             width: 80%;
             max-width: 900px;
             margin: auto;
-            padding: 2.5rem 3rem;
+            padding: nth($medida-generales,4) nth($medida-generales,5);
             text-align: center;
 
             .contacto__title {
-                h2 {
+                h1 {
                     font-family: 'Nunito', sans-serif;
                     font-size: 30px;
                     text-align: center;
@@ -27,14 +28,14 @@ main {
             }
 
             .contacto__form--form {
-                margin-top: 3rem;
+                margin-top: nth($medida-generales,5);
                 display: grid;
 
                 .contacto__form--group {
                     position: relative;
                     
                     .contacto__form--1 {
-                        margin-bottom: 1rem;
+                        margin-bottom: nth($medida-generales,1);
                         .form__label-1{
                             margin-left: 0.5rem;
                             color: nth($color-generales,1);
@@ -59,7 +60,7 @@ main {
                             width: 40%;
                             background: none;
                             color: nth($color-generales,1);
-                            font-size: 1rem;
+                            font-size: nth($medida-generales,1);
                             padding: 0.6rem 0.3rem;
                             margin-left: 0.6rem;
                             border: none;
@@ -123,20 +124,19 @@ main {
 
                     .contacto__form--3 {
                         >div {
-                            width: 100%;
-                            display: flex;
-                            flex-direction: row;
+                            width: $m-100;
+                            @extend %flex-row;
                             justify-content: center;
-                            margin: 1rem;
+                            margin: nth($medida-generales,1);
 
                             >label {
-                                margin-left: 1rem;
+                                margin-left: nth($medida-generales,1);
                                 font-weight: bold;
                             }
                         }
 
                         .contacto__form--3-2 {
-                            margin-bottom: 2rem;
+                            margin-bottom: nth($medida-generales,3);
                             display: flex;
                             flex-wrap: wrap;
 
@@ -195,7 +195,7 @@ main {
                             display: flex;
                             flex-wrap: wrap;
                             justify-content: center;
-                            margin-top: 1rem;
+                            margin-top: nth($medida-generales,1);
 
                             div {
                                 margin-left: 0.5rem;
@@ -204,14 +204,13 @@ main {
                     }
 
                     .contacto__form--5 {
-                        display: flex;
-                        flex-direction: column;
+                        @extend %flex-dir;
 
                         textarea {
-                            width: 100%;
+                            width: $m-100;
                             height: 6rem;
                             resize: none;
-                            margin-bottom: 1rem;
+                            margin-bottom: nth($medida-generales,1);
                         }
                     }
 
